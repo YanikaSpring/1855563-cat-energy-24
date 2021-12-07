@@ -4,7 +4,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $black;
 }
 
 .form-page__description {
@@ -13,7 +13,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -23,7 +23,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -35,10 +35,10 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
   text-transform: uppercase;
-  border: 1px solid #E7E7E7;
-  background-color: #ffffff;
+  border: 1px solid $input_line;
+  background-color: $white;
 }
 
 .form-page__input-weight {
@@ -47,10 +47,10 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
   text-transform: uppercase;
-  border: 1px solid #E7E7E7;
-  background-color: #ffffff;
+  border: 1px solid $input_line;
+  background-color: $white;
 }
 
 .form-page__input-age {
@@ -59,10 +59,10 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
   text-transform: uppercase;
-  border: 1px solid #E7E7E7;
-  background-color: #ffffff;
+  border: 1px solid $input_line;
+  background-color: $white;
 }
 
 .form-page__programm-item {
@@ -71,7 +71,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #222222;
+  color: $special_dark-grey-2;
   text-transform: uppercase;
 }
 
@@ -81,7 +81,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
 }
 
 .form-page__input-mail {
@@ -90,10 +90,10 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
   text-transform: uppercase;
-  border: 1px solid #E7E7E7;
-  background-color: #ffffff;
+  border: 1px solid $input_line;
+  background-color: $white;
 }
 
 .form-page__input-telephone {
@@ -102,10 +102,10 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
   text-transform: uppercase;
-  border: 1px solid #E7E7E7;
-  background-color: #ffffff;
+  border: 1px solid $input_line;
+  background-color: $white;
 }
 
 .form-page__form-comment {
@@ -114,7 +114,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
 }
 
 .form-page__comment {
@@ -123,10 +123,10 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
   text-transform: uppercase;
-  border: 1px solid #E7E7E7;
-  background-color: #ffffff;
+  border: 1px solid $input_line;
+  background-color: $white;
 }
 
 .form-page__add-form {
@@ -135,7 +135,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
 }
 
 .form-page__add-item {
@@ -144,7 +144,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -154,10 +154,10 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: $white;
   text-transform: uppercase;
   border: 0;
-  background-color: #68B738;
+  background-color: $basic_green;
   padding: 7px 44px;
 }
 
@@ -167,5 +167,5 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #000000;
+  color: $black;
 }

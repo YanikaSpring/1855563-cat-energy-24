@@ -1,5 +1,5 @@
 .slider {
-  background-color: #EAEAEA;
+  background-color: $grey;
   margin: 0;
 }
 
@@ -12,6 +12,6 @@
   text-transform: uppercase;
   border: 0;
   background-color: transparent;
-  color: #000000;
+  color: $black;
   cursor: pointer;
 }

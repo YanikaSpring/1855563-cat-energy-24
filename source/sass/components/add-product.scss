@@ -1,10 +1,10 @@
 .add-product__title {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $black;
 }
 
 .add-product__list {
@@ -13,21 +13,21 @@
 }
 
 .add-product__subtitle {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
-  color: #222222;
+  color: $special_dark-grey-2;
 }
 
 .add-product__extra-list {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
-  color: #444444;
+  color: $special_dark-grey;
 }
 
 .add-product__button {
@@ -36,9 +36,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: $white;
   text-transform: uppercase;
   border: 0;
-  background-color: #68B738;
+  background-color: $basic_green;
   padding: 10px 109px;
 }

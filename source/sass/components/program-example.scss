@@ -1,5 +1,5 @@
 .program-example {
-  background-color: #EAEAEA;
+  background-color: $grey;
 }
 
 .program-example__title {
@@ -8,7 +8,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -18,7 +18,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
 }
 
 .program-example__key {
@@ -27,7 +27,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -37,7 +37,7 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 100%;
-  color: #444444;
+  color: $special_dark-grey;
 }
 
 .program-example__subtitle {
@@ -46,7 +46,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
   text-align: center;
 }

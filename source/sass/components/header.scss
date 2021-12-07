@@ -1,7 +1,7 @@
 .header {
-  background-image: url('../img/cat-green-mobile.jpg');
+  background-image: url("../img/cat-green-mobile.jpg");
   background-repeat: no-repeat;
-  background-color: #68B738;
+  background-color: $basic_green;
   width: 320px;
 }
 
@@ -11,7 +11,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  color: #FFFFFF;
+  color: $white;
   text-align: center;
 }
 
@@ -21,7 +21,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
-  color: #FFFFFF;
+  color: $white;
   text-align: center;
 }
 
@@ -31,9 +31,9 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: $white;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #68B738;
+  background-color: $basic_green;
   padding: 7px 44px;
 }

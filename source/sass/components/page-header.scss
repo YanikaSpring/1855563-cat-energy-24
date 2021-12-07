@@ -1,12 +1,12 @@
 .page-header {
-  background-color: #ffffff;
+  background-color: $white;
   display: flex;
   width: 320px;
   padding: 10px 20px 17px 20px;
 }
 
 .navigation__link {
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
@@ -19,4 +19,3 @@
 .navigation__list {
   list-style-type: none;
 }
-

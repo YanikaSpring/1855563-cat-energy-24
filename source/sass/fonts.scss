@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url(/fonts/oswaldregular.woff2) format("woff2");
+  src: url("/fonts/oswaldregular.woff2") format("woff2");
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/fonts/oswaldmedium.woff2) format("woff2");
+  src: url("/fonts/oswaldmedium.woff2") format("woff2");
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url(/fonts/arial.woff2) format("woff2");
+  src: url("/fonts/arial.woff2") format("woff2");
 }
 
 // шрифты woff
@@ -30,7 +30,7 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url(/fonts/oswaldregular.woff) format("woff");
+  src: url("/fonts/oswaldregular.woff") format("woff");
 }
 
 @font-face {
@@ -38,7 +38,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/fonts/oswaldmedium.woff) format("woff");
+  src: url("/fonts/oswaldmedium.woff") format("woff");
 }
 
 @font-face {
@@ -46,5 +46,5 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url(/fonts/arial.woff) format("woff2");
+  src: url("/fonts/arial.woff") format("woff2");
 }
