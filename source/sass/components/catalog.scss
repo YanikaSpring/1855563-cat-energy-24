@@ -1,0 +1,87 @@
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.catalog__list {
+  margin: 0;
+  list-style-type: none;
+}
+
+.catalog__link-title {
+  text-decoration: none;
+}
+
+.catalog__item-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.catalog__extra-list {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog__button {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #68B738;
+  padding: 10px 109px;
+}
+
+.catalog__item {
+  margin-bottom: 19px;
+}
+
+.catalog__see-more {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog__description-more {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  text-align: center;
+}
+
+.catalog__button-all {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #F2F2F2;
+  padding: 10px 94px;
+}

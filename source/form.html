@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -35,13 +36,13 @@
           <fieldset class="form-page__form-fieldset">
             <legend class="visually-hidden">Данные кота</legend>
             <label class="form-page__label">имя:*
-              <input type="text" name="cat's name" required placeholder="барсик">
+              <input type="text" name="cat's name" required placeholder="барсик" class="form-page__input-name">
             </label>
             <label class="form-page__label">вес (кг):*
-              <input type="text" name="cat's weight" required placeholder="7">
+              <input type="text" name="cat's weight" required placeholder="7" class="form-page__input-weight">
             </label>
             <label class="form-page__label">возраст (лет):*
-              <input type="text" name="cat's age" required placeholder="7">
+              <input type="text" name="cat's age" required placeholder="7" class="form-page__input-age">
             </label>
           </fieldset>
             <!-- Выбор программы -->
@@ -75,17 +76,17 @@
           <fieldset class="form-page__form-fieldset">
             <legend class="form-page__form-contacts">Контактные данные (владельца кота)</legend>
             <label class="form-page__label">E-mail:*
-              <input type="email" name="e-mail" required placeholder="kuklachev@gmail.com">
+              <input type="email" name="e-mail" required placeholder="kuklachev@gmail.com" class="form-page__input-mail">
             </label>
             <label class="form-page__label">Телефон:*
-              <input type="tel" name="telephone" required placeholder="8 (960) 900-60-90">
+              <input type="tel" name="telephone" required placeholder="8 (960) 900-60-90" class="form-page__input-telephone">
             </label>
           </fieldset>
             <!-- Комментарий -->
           <fieldset class="form-page__form-fieldset">
             <legend class="form-page__form-comment">Комментарий</legend>
             <label class="form-page__label">
-              <textarea name="comment" id="comment-field" rows="10" class="form-page__form-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea name="comment" id="comment-field" rows="10" class="form-page__comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
             <!-- Дополнительно -->
@@ -132,31 +133,33 @@
           <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="footer__map">
-          <img class="footer__map-image" src="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="footer__map-image" src="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320px" height="362px">
         </div>
-        <a class="footer__logo" href="#">
-          <img class="footer__logo-image" alt="cat energy." src="img/footer-logo.svg">
-        </a>
-        <div class="footer__social social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#">ВКонтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">Инстаграм</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">Фейсбук</a>
-            </li>
-          </ul>
-        </div>
-        <div class="academy">
-          <h2 class="visually-hidden">Контакты академии</h2>
-          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <h3 class="academy__title">HTML Academy</h3>
-            <img class="academy__logo" alt="HTML Academy." src="img/logo-academy.svg">
+        <div class="footer__wrapper">
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-image" alt="cat energy." src="img/footer-logo.svg">
           </a>
+          <div class="footer__social social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">ВКонтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">Инстаграм</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">Фейсбук</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__academy">
+            <h2 class="visually-hidden">Контакты академии</h2>
+            <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <h3 class="footer__academy-title">HTML Academy</h3>
+              <img class="footer__academy-logo" alt="HTML Academy." src="img/logo-academy.svg">
+            </a>
+          </div>
         </div>
       </footer>
   </body>

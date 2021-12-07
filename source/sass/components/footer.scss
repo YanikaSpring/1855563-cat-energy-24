@@ -1,0 +1,51 @@
+.footer__address-wrapper {
+  display: flex;
+}
+
+.footer__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.footer__address {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.footer__map {
+  width: 320px;
+  height: 362px;
+}
+
+.footer__academy-link {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #444444;
+}
+
+.footer__academy-title {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.footer__wrapper {
+  background-color: #F2F2F2;
+  padding-top: 39px;
+}
+
+

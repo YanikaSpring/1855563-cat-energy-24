@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -36,7 +37,7 @@
                 <img class="catalog__image" alt="Cat Energy PRO 500 г" src="img/cat-energy-chiken-500.jpg">
               </a>
               <a class="catalog__link-title" href="#">
-                <h2>Cat Energy PRO 500 г</h2>
+                <h2 class="catalog__item-title">Cat Energy PRO 500 г</h2>
               </a>
               <dl class="catalog__extra-list">
                 <dt class="catalog__extra-term">Масса</dt>
@@ -52,8 +53,8 @@
               <a class="catalog__link" href="#">
                 <img class="catalog__image" alt="Cat Energy PRO 1000 г" src="img/cat-energy-chiken-1000.jpg">
               </a>
-              <a class="catalog__link" href="#">
-                <h2>Cat Energy PRO 1000 г</h2>
+              <a class="catalog__link-title" href="#">
+                <h2 class="catalog__item-title">Cat Energy PRO 1000 г</h2>
               </a>
               <dl class="catalog__extra-list">
                 <dt class="catalog__extra-term">Масса</dt>
@@ -69,8 +70,8 @@
               <a class="catalog__link" href="#">
                 <img class="catalog__image" alt="Cat Energy PRO 500 г" src="img/cat-energy-fish-500.jpg">
               </a>
-              <a class="catalog__link" href="#">
-                <h2>Cat Energy PRO 500 г</h2>
+              <a class="catalog__link-title" href="#">
+                <h2 class="catalog__item-title">Cat Energy PRO 500 г</h2>
               </a>
               <dl class="catalog__extra-list">
                 <dt class="catalog__extra-term">Масса</dt>
@@ -86,8 +87,8 @@
               <a class="catalog__link" href="#">
                 <img class="catalog__image" alt="Cat Energy PRO 1000 г" src="img/cat-energy-fish-1000.jpg">
               </a>
-              <a class="catalog__link" href="#">
-                <h2>Cat Energy PRO 1000 г</h2>
+              <a class="catalog__link-title" href="#">
+                <h2 class="catalog__item-title">Cat Energy PRO 1000 г</h2>
               </a>
               <dl class="catalog__extra-list">
                 <dt class="catalog__extra-term">Масса</dt>
@@ -103,8 +104,8 @@
               <a class="catalog__link" href="#">
                 <img class="catalog__image" alt="Cat Energy slim 500 г" src="img/cat-energy-buckwheat-500.jpg">
               </a>
-              <a class="catalog__link" href="#">
-                <h2>Cat Energy slim 500 г</h2>
+              <a class="catalog__link-title" href="#">
+                <h2 class="catalog__item-title">Cat Energy slim 500 г</h2>
               </a>
               <dl class="catalog__extra-list">
                 <dt class="catalog__extra-term">Масса</dt>
@@ -120,8 +121,8 @@
               <a class="catalog__link" href="#">
                 <img class="catalog__image" alt="Cat Energy slim 1000 г" src="img/cat-energy-buckwheat-1000.jpg">
               </a>
-              <a class="catalog__link" href="#">
-                <h2>Cat Energy slim 1000 г</h2>
+              <a class="catalog__link-title" href="#">
+                <h2 class="catalog__item-title">Cat Energy slim 1000 г</h2>
               </a>
               <dl class="catalog__extra-list">
                 <dt class="catalog__extra-term">Масса</dt>
@@ -137,8 +138,8 @@
               <a class="catalog__link" href="#">
                 <img class="catalog__image" alt="Cat Energy slim 500 г" src="img/cat-energy-rice-5000.jpg">
               </a>
-              <a class="catalog__link" href="#">
-                <h2>Cat Energy slim 500 г</h2>
+              <a class="catalog__link-title" href="#">
+                <h2 class="catalog__item-title">Cat Energy slim 500 г</h2>
               </a>
               <dl class="catalog__extra-list">
                 <dt class="catalog__extra-term">Масса</dt>
@@ -160,26 +161,34 @@
           <ul class="add-product__list">
             <li class="add-product__item">
               <h3 class="add-product__subtitle">Сахарозаменитель</h3>
-              <p class="add-product__description">1 упаковка (100 г)</p>
-              <b class="add-product__price">200 Р.</b>
+              <dl class="add-product__extra-list">
+                <dt class="add-product__extra-term">1 упаковка (100 г)</dt>
+                <dd class="add-product__extra-description">200 Р.</dd>
+              </dl>
               <button type="button" class="add-product__button">заказать</button>
             </li>
             <li class="add-product__item">
               <h3 class="add-product__subtitle">питьевая вода</h3>
-              <p class="add-product__description">5 литров</p>
-              <b class="add-product__price">50 Р.</b>
+              <dl class="add-product__extra-list">
+                <dt class="add-product__extra-term">5 литров</dt>
+                <dd class="add-product__extra-description">50 Р.</dd>
+              </dl>
               <button type="button" class="add-product__button">заказать</button>
             </li>
             <li class="add-product__item">
               <h3 class="add-product__subtitle">молоко</h3>
-              <p class="add-product__description">1 литр</p>
-              <b class="add-product__price">100 Р.</b>
+              <dl class="add-product__extra-list">
+                <dt class="add-product__extra-term">1 литр</dt>
+                <dd class="add-product__extra-description">100 Р.</dd>
+              </dl>
               <button type="button" class="add-product__button">заказать</button>
             </li>
             <li class="add-product__item">
               <h3 class="add-product__subtitle">витамины</h3>
-              <p class="add-product__description">1 упаковка (30 г)</p>
-              <b class="add-product__price">300 Р.</b>
+              <dl class="add-product__extra-list">
+                <dt class="add-product__extra-term">1 упаковка (30 г)</dt>
+                <dd class="add-product__extra-description">300 Р.</dd>
+              </dl>
               <button type="button" class="add-product__button">заказать</button>
             </li>
           </ul>
@@ -196,31 +205,33 @@
           <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="footer__map">
-          <img class="footer__map-image" src="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="footer__map-image" src="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320px" height="362px">
         </div>
-        <a class="footer__logo" href="#">
-          <img class="footer__logo-image" alt="cat energy." src="img/footer-logo.svg">
-        </a>
-        <div class="footer__social social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#">ВКонтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">Инстаграм</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">Фейсбук</a>
-            </li>
-          </ul>
-        </div>
-        <div class="academy">
-          <h2 class="visually-hidden">Контакты академии</h2>
-          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <h3 class="academy__title">HTML Academy</h3>
-            <img class="academy__logo" alt="HTML Academy." src="img/logo-academy.svg">
+        <div class="footer__wrapper">
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-image" alt="cat energy." src="img/footer-logo.svg">
           </a>
+          <div class="footer__social social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">ВКонтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">Инстаграм</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">Фейсбук</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__academy">
+            <h2 class="visually-hidden">Контакты академии</h2>
+            <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <h3 class="footer__academy-title">HTML Academy</h3>
+              <img class="footer__academy-logo" alt="HTML Academy." src="img/logo-academy.svg">
+            </a>
+          </div>
         </div>
       </footer>
   </body>

@@ -1,0 +1,39 @@
+.header {
+  background-image: url('../img/cat-green-mobile.jpg');
+  background-repeat: no-repeat;
+  background-color: #68B738;
+  width: 320px;
+}
+
+.header__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.header__description {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.header__link {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #68B738;
+  padding: 7px 44px;
+}
