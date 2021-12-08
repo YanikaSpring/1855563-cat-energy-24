@@ -1,10 +1,13 @@
+@import "../abstracts/variables.scss";
+@import "../fonts.scss";
+
 .present {
   background-image: url("../img/gift-mobile.jpg");
   background-repeat: no-repeat;
   width: 280px;
   height: 290px;
   margin: 0 auto;
-  background-color: $basic_green;
+  background-color: $Apple;
 }
 
 .present__description {

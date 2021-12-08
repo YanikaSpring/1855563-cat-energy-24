@@ -1,3 +1,6 @@
+@import "../abstracts/variables.scss";
+@import "../fonts.scss";
+
 .program-information__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -19,5 +22,5 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $Tundora;
 }

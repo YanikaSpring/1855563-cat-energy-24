@@ -1,21 +1,9 @@
+@import "../abstracts/variables.scss";
+@import "../fonts.scss";
+
 .page-header {
   background-color: $white;
   display: flex;
   width: 320px;
   padding: 10px 20px 17px 20px;
-}
-
-.navigation__link {
-  color: $black;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-}
-
-.navigation__list {
-  list-style-type: none;
 }

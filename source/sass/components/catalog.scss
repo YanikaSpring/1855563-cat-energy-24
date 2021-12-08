@@ -1,3 +1,6 @@
+@import "../abstracts/variables.scss";
+@import "../fonts.scss";
+
 .catalog__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -22,7 +25,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: $special_dark-grey-2;
+  color: $MineShaft;
   text-transform: uppercase;
 }
 
@@ -32,7 +35,7 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  color: $special_dark-grey;
+  color: $Tundora;
 }
 
 .catalog__button {
@@ -44,7 +47,7 @@
   color: $white;
   text-transform: uppercase;
   border: 0;
-  background-color: $basic_green;
+  background-color: $Apple;
   padding: 10px 109px;
 }
 
@@ -58,7 +61,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: $light-black;
+  color: $CodGray;
   text-transform: uppercase;
   text-align: center;
 }
@@ -69,7 +72,7 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  color: $special_dark-grey;
+  color: $Tundora;
   text-align: center;
 }
 
@@ -79,9 +82,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: $special_dark-grey;
+  color: $Tundora;
   text-transform: uppercase;
   border: 0;
-  background-color: $basic_grey;
+  background-color: $Concrete;
   padding: 10px 94px;
 }

@@ -1,3 +1,6 @@
+@import "../abstracts/variables.scss";
+@import "../fonts.scss";
+
 .form-page__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -23,7 +26,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $Tundora;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -35,9 +38,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $Tundora;
   text-transform: uppercase;
-  border: 1px solid $input_line;
+  border: 1px solid $Mercury;
   background-color: $white;
 }
 
@@ -47,9 +50,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $Tundora;
   text-transform: uppercase;
-  border: 1px solid $input_line;
+  border: 1px solid $Mercury;
   background-color: $white;
 }
 
@@ -59,9 +62,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $Tundora;
   text-transform: uppercase;
-  border: 1px solid $input_line;
+  border: 1px solid $Mercury;
   background-color: $white;
 }
 
@@ -71,7 +74,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $special_dark-grey-2;
+  color: $MineShaft;
   text-transform: uppercase;
 }
 
@@ -90,9 +93,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $Tundora;
   text-transform: uppercase;
-  border: 1px solid $input_line;
+  border: 1px solid $Mercury;
   background-color: $white;
 }
 
@@ -102,9 +105,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $Tundora;
   text-transform: uppercase;
-  border: 1px solid $input_line;
+  border: 1px solid $Mercury;
   background-color: $white;
 }
 
@@ -123,9 +126,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $Tundora;
   text-transform: uppercase;
-  border: 1px solid $input_line;
+  border: 1px solid $Mercury;
   background-color: $white;
 }
 
@@ -157,7 +160,7 @@
   color: $white;
   text-transform: uppercase;
   border: 0;
-  background-color: $basic_green;
+  background-color: $Apple;
   padding: 7px 44px;
 }
 

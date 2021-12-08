@@ -1,0 +1,9 @@
+@import "./abstracts/variables.scss";
+@import "./fonts.scss";
+
+body {
+  width: 320px;
+  background-color: $white;
+  margin: 0 auto;
+  padding: 0;
+}

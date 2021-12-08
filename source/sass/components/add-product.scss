@@ -1,3 +1,6 @@
+@import "../abstracts/variables.scss";
+@import "../fonts.scss";
+
 .add-product__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -18,7 +21,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
-  color: $special_dark-grey-2;
+  color: $MineShaft;
 }
 
 .add-product__extra-list {
@@ -27,7 +30,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
-  color: $special_dark-grey;
+  color: $Tundora;
 }
 
 .add-product__button {
@@ -39,6 +42,6 @@
   color: $white;
   text-transform: uppercase;
   border: 0;
-  background-color: $basic_green;
+  background-color: $Apple;
   padding: 10px 109px;
 }

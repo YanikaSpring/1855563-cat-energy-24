@@ -1,3 +1,6 @@
+@import "../abstracts/variables.scss";
+@import "../fonts.scss";
+
 .footer__address-wrapper {
   display: flex;
 }
@@ -9,7 +12,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $light-black;
+  color: $CodGray;
 }
 
 .footer__address {
@@ -18,7 +21,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: $special_dark-grey;
+  color: $Tundora;
 }
 
 .footer__map {
@@ -31,7 +34,7 @@
   margin: 0;
   justify-content: space-between;
   text-decoration: none;
-  color: $special_dark-grey;
+  color: $Tundora;
 }
 
 .footer__academy-title {
@@ -40,10 +43,10 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $Tundora;
 }
 
 .footer__wrapper {
-  background-color: $basic_grey;
+  background-color: $Concrete;
   padding-top: 39px;
 }

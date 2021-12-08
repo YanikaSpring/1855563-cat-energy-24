@@ -1,5 +1,8 @@
+@import "../fonts.scss";
+@import "../abstracts/variables.scss";
+
 .program-example {
-  background-color: $grey;
+  background-color: $Gallery;
 }
 
 .program-example__title {
@@ -18,7 +21,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $Tundora;
 }
 
 .program-example__key {
@@ -37,7 +40,7 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 100%;
-  color: $special_dark-grey;
+  color: $Tundora;
 }
 
 .program-example__subtitle {

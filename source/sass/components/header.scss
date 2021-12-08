@@ -1,7 +1,10 @@
+@import "../abstracts/variables.scss";
+@import "../fonts.scss";
+
 .header {
   background-image: url("../img/cat-green-mobile.jpg");
   background-repeat: no-repeat;
-  background-color: $basic_green;
+  background-color: $Apple;
   width: 320px;
 }
 
@@ -34,6 +37,6 @@
   color: $white;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: $basic_green;
+  background-color: $Apple;
   padding: 7px 44px;
 }

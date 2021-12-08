@@ -1,10 +1,13 @@
+@import "../abstracts/variables.scss";
+@import "../fonts.scss";
+
 .nutrition-program__list {
   list-style-type: none;
   margin: 0;
 }
 
 .nutrition-program__item {
-  background-color: $basic_grey;
+  background-color: $Concrete;
 }
 
 .nutrition-program__title {
@@ -23,7 +26,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $Tundora;
 }
 
 .nutrition-program__link {
