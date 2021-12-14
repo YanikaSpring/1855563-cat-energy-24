@@ -2,8 +2,21 @@
 @import "./fonts.scss";
 
 body {
-  width: 320px;
   background-color: $white;
   margin: 0 auto;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 140px 140px 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 132px 132px 132px 132px 1fr;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 245px 245px 245px 245px 1fr;
+    column-gap: 80px;
+  }
 }

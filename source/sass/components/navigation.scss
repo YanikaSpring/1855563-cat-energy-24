@@ -10,8 +10,50 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 36px;
+  }
 }
 
 .navigation__list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    min-width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    min-width: 480px;
+  }
+}
+
+.navigation__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 37px;
+  }
 }

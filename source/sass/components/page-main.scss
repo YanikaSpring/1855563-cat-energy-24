@@ -1,0 +1,12 @@
+.page-main {
+  grid-column: 2 / 4;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 9;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 9;
+  }
+}

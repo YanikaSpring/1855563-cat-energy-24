@@ -1,14 +1,61 @@
 @import "../abstracts/variables.scss";
 @import "../fonts.scss";
 
+.nutrition-program {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .nutrition-program__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .nutrition-program__item {
   background-color: $Concrete;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+  }
+}
+
+.nutrition-program__item:not(:last-child) {
+  margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 80px 0 0;
+  }
 }
 
 .nutrition-program__title {

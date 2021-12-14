@@ -4,6 +4,12 @@
 .slider {
   background-color: $Gallery;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
 }
 
 .slider__button {
