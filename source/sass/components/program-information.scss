@@ -1,6 +1,10 @@
 @import "../abstracts/variables.scss";
 @import "../fonts.scss";
 
+.program-information {
+  margin: 0 0 25px 7px;
+}
+
 .program-information__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -8,7 +12,13 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
-  text-transform: uppercase;
+  margin: 0 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 28px 10px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-information__list {
@@ -17,26 +27,55 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  margin: 0 20px 0 70px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 0 0 10px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     max-width: 1220px;
+    margin: 0 0 0 9px;
   }
 }
 
 .program-information__item {
-  max-width: 256px;
+  width: 256px;
 
   @media (min-width: $tablet-width) {
-    max-width: 230px;
+    width: 230px;
+    margin: 0 153px 37px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 141px 0 57px 0;
     margin: 0;
+    width: 245px;
+
+  }
+}
+
+.program-information__item:first-child {
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
+}
+
+.program-information__item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    margin-right: 77px;
+  }
+}
+
+.program-information__item:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
   }
 }
 
@@ -47,4 +86,9 @@
   font-size: 14px;
   line-height: 18px;
   color: $Tundora;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

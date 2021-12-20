@@ -1,9 +1,10 @@
 .page-main {
-  grid-column: 2 / 4;
+  grid-column: 1 / -1;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    grid-column: 2 / 9;
+    grid-column: 1 / -1;
+    margin: 0 15px;
   }
 
   @media (min-width: $desktop-width) {

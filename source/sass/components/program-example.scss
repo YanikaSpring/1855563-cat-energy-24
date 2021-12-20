@@ -13,7 +13,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     max-width: 1220px;
   }
 }
@@ -22,9 +21,15 @@
   background-color: $Gallery;
   display: flex;
   flex-direction: column;
+  padding: 25px 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 193px 0 0;
+    padding: 25px 20px 40px 17px;
   }
 }
 
@@ -35,7 +40,16 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
-  text-transform: uppercase;
+  margin: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 147px 0;
+  }
 }
 
 .program-example__description {
@@ -46,15 +60,18 @@
   line-height: 18px;
   color: $Tundora;
   max-width: 280px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     max-width: 708px;
+    margin: 0 0 54px 0;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 436px;
+    margin: 0 0 82px 0;
   }
 }
 
@@ -75,6 +92,14 @@
 
 .program-example__list {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 120px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 60px 55px;
+  }
 }
 
 .program-example__key {
@@ -85,6 +110,11 @@
   line-height: 24px;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .program-example__value {
@@ -94,6 +124,11 @@
   font-size: 12px;
   line-height: 100%;
   color: $Tundora;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .program-example__subtitle {
@@ -105,4 +140,10 @@
   color: $black;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+  }
 }

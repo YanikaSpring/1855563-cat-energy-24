@@ -4,14 +4,17 @@
 .nutrition-program {
   display: flex;
   flex-direction: column;
+  margin: 0 0 20px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    margin: 0 110px 30px 15px;
   }
 }
 
@@ -25,6 +28,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0 0 45px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,13 +41,17 @@
 .nutrition-program__item {
   background-color: $Concrete;
   max-width: 280px;
+  padding: 30px 33px 18px 20px;
 
   @media (min-width: $tablet-width) {
-    max-width: 708px;
+    max-width: 660px;
+    padding: 77px 0px 33px 50px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 570px;
+    width: 570px;
+    padding: 77px 0 55px 0px;
   }
 }
 
@@ -66,6 +75,19 @@
   line-height: 37px;
   color: $black;
   text-transform: uppercase;
+  margin: 0;
+  width: 227px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    margin: 0 0 24px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 74px 215px;
+  }
 }
 
 .nutrition-program__description {
@@ -75,6 +97,25 @@
   font-size: 14px;
   line-height: 18px;
   color: $Tundora;
+  // width: 227px;
+  margin: 0;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 0 48px 0;
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 28px 52px;
+    display: block;
+    text-align: start;
+    width: 467px;
+  }
 }
 
 .nutrition-program__link {
@@ -86,4 +127,13 @@
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 52px;
+  }
 }

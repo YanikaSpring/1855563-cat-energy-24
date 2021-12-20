@@ -1,6 +1,17 @@
 @import "../abstracts/variables.scss";
 @import "../fonts.scss";
 
+.add-product {
+  padding: 0 20px;
+  margin: 0 0 69px 0;
+}
+
+.add-product__present-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .add-product__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -8,11 +19,23 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 80px 30px;
+  }
 }
 
 .add-product__list {
   list-style-type: none;
   margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 870px;
+    margin: 0 59px 0 0;
+  }
 }
 
 .add-product__subtitle {
@@ -22,15 +45,70 @@
   font-size: 16px;
   line-height: 16px;
   color: $MineShaft;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 163px;
+  }
 }
 
 .add-product__extra-list {
-  font-family: "Oswald", sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: $Tundora;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.add-product__item {
+  @media (min-width: $tablet-width) {
+    border: 1px solid $Silver;
+    padding: 26px 30px 28px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 870px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-top: 1px solid $Silver;
+  }
+}
+
+.add-product__item:last-child {
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid $Silver;
+  }
+}
+
+.add-product__item-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .add-product__button {
@@ -44,4 +122,5 @@
   border: 0;
   background-color: $Apple;
   padding: 10px 109px;
+  cursor: pointer;
 }
