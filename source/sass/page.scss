@@ -7,13 +7,11 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 140px 140px 1fr;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
   width: 320px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 132px 132px 132px 132px 1fr;
+    grid-template-columns: 1fr 132px 132px 132px 1fr;
     column-gap: 60px;
     width: 768px;
   }

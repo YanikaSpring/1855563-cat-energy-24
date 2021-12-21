@@ -4,7 +4,7 @@
 .nutrition-program {
   display: flex;
   flex-direction: column;
-  margin: 0 0 20px 0;
+  margin: 0 20px 20px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -14,7 +14,8 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin: 0 110px 30px 15px;
+    margin: 0 0 71px 0;
+    padding: 0;
   }
 }
 
@@ -35,35 +36,34 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    margin: 0;
   }
 }
 
 .nutrition-program__item {
   background-color: $Concrete;
-  max-width: 280px;
   padding: 30px 33px 18px 20px;
 
   @media (min-width: $tablet-width) {
-    max-width: 660px;
-    padding: 77px 0 33px 50px;
+    padding: 77px 316px 33px 50px;
     box-sizing: border-box;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 570px;
-    padding: 77px 0 55px 0;
   }
 }
 
-.nutrition-program__item:not(:last-child) {
-  margin: 0 0 20px 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 30px 0;
-  }
+.nutrition-program__item:first-child {
+  margin-bottom: 20px;
 
   @media (min-width: $desktop-width) {
+    padding: 77px 51px 55px 52px;
     margin: 0 80px 0 0;
+    width: 570px;
+  }
+}
+
+.nutrition-program__item:last-child {
+  @media (min-width: $desktop-width) {
+    padding: 77px 61px 55px 52px;
+    width: 570px;
   }
 }
 
@@ -75,18 +75,15 @@
   line-height: 37px;
   color: $black;
   text-transform: uppercase;
-  margin: 0;
-  width: 227px;
+  margin: 0 0 29px 90px;
 
   @media (min-width: $tablet-width) {
-    max-width: 340px;
-    margin: 0 0 24px 0;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 74px 215px;
+    margin: 0 0 73px 214px;
   }
 }
 
@@ -97,23 +94,19 @@
   font-size: 14px;
   line-height: 18px;
   color: $Tundora;
-  margin: 0;
+  margin: 0 0 38px 0;
   display: flex;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 0 0 48px 0;
-    width: 340px;
     font-size: 16px;
     line-height: 24px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 28px 52px;
-    display: block;
     text-align: start;
-    width: 467px;
+    margin: 0 0 23px 0;
   }
 }
 
@@ -133,6 +126,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 52px;
+    margin: 0;
   }
 }
