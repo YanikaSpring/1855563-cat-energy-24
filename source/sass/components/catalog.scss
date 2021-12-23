@@ -1,6 +1,17 @@
 @import "../abstracts/variables.scss";
 @import "../fonts.scss";
 
+.catalog {
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
+  }
+}
+
 .catalog__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -59,12 +70,12 @@
     margin-bottom: 60px;
     padding: 0 0 39px 0;
     width: 324px;
-    margin-right: 80px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     padding: 0 0 40px 0;
+    margin-right: 80px;
   }
 }
 

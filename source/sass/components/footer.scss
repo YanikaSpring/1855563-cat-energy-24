@@ -3,6 +3,7 @@
 
 .footer {
   grid-column: 1 / -1;
+  background-color: $Concrete;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
@@ -30,8 +31,9 @@
     position: absolute;
     background-color: $white;
     top: 95px;
-    left: 109px;
+    left: 509px;
     padding: 58px 80px;
+    margin: 0 auto;
   }
 }
 
@@ -79,22 +81,24 @@
 .footer__map {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  background-color: $Mercury;
-  background-position: center;
-  width: 320px;
+  background-color: $Concrete;
+  background-position: 50% 0;
   height: 362px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     height: 400px;
     background-image: url("../img/map_tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
     height: 400px;
     background-image: url("../img/map_desktop.jpg");
   }
+}
+
+.footer__map-google {
+  border: none;
+  display: block;
 }
 
 .footer__academy-link {
@@ -132,7 +136,6 @@
 }
 
 .footer__wrapper {
-  background-color: $Concrete;
   padding: 39px 20px 22px 20px;
   display: flex;
   flex-direction: column;
@@ -142,12 +145,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 768px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    margin: 0 auto;
   }
 }
 

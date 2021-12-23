@@ -1,8 +1,23 @@
 @import "../abstracts/variables.scss";
 @import "../fonts.scss";
 
+.program-information__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .program-information {
   margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 25px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
 }
 
 .program-information__title {

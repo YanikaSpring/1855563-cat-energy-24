@@ -4,11 +4,9 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
-    margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
-    margin: 0 110px;
   }
 }

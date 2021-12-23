@@ -4,6 +4,7 @@
 .program-example__wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -13,23 +14,27 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    max-width: 1220px;
+    background-color: $Concrete;
+    justify-content: center;
   }
 }
 
+
 .program-example {
-  background-color: $Gallery;
+  background-color: $Concrete;
   display: flex;
   flex-direction: column;
   padding: 25px 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    padding: 25px 30px 40px 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 193px 0 0;
     padding: 25px 20px 40px 17px;
+    background-color: $Concrete;
   }
 }
 
