@@ -20,6 +20,7 @@
   justify-content: space-between;
   max-width: 280px;
   padding: 26px 20px;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     max-width: 628px;

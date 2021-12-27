@@ -4,7 +4,8 @@
 .page-header {
   background-color: $white;
   display: flex;
-  margin: 10px 20px 17px 20px;
+  flex-direction: column;
+  margin: 10px 0 17px 0;
   padding: 0;
   grid-column: 1 / -1;
 
@@ -27,6 +28,8 @@
 }
 
 .page-header__logo-image {
+  margin: 0 0 0 20px;
+
   @media (min-width: $tablet-width) {
     margin-right: 24px;
   }
@@ -34,4 +37,12 @@
   @media (min-width: $desktop-width) {
     margin-right: 540px;
   }
+}
+
+.page-header__logo-image:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo-image:active {
+  opacity: 0.6;
 }

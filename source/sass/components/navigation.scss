@@ -1,25 +1,9 @@
 @import "../abstracts/variables.scss";
 @import "../fonts.scss";
 
-.navigation__link {
-  color: $black;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 36px;
-  }
+.navigation {
+  position: relative;
+  min-height: 1px;
 }
 
 .navigation__list {
@@ -43,11 +27,88 @@
   }
 }
 
+.navigation__item {
+  padding: 22px 0 22px 0;
+  border-top: 1px solid $Mercury;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation__link {
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+.navigation__link:hover {
+  opacity: 0.6;
+}
+
+.navigation__link:active {
+  opacity: 0.3;
+}
+
+.navigation__active-index::before {
+  content: "";
+  width: 76px;
+  height: 2px;
+  background-color: $Apple;
+  top: 30px;
+  left: 0;
+  position: absolute;
+}
+
+.navigation__active-catalog::before {
+  content: "";
+  width: 181px;
+  height: 2px;
+  background-color: $Apple;
+  top: 30px;
+  left: 0;
+  position: absolute;
+}
+
+.navigation__active-form::before {
+  content: "";
+  width: 180px;
+  height: 2px;
+  background-color: $Apple;
+  top: 30px;
+  left: 0;
+  position: absolute;
+}
+
 .navigation__toggle {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
+
 
 .navigation__item:not(:last-child) {
   @media (min-width: $tablet-width) {
@@ -57,4 +118,59 @@
   @media (min-width: $desktop-width) {
     margin-right: 37px;
   }
+}
+
+.navigation--closed .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}
+
+.navigation--opened .navigation__toggle {
+  top: -35px;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .navigation--closed .navigation__item {
+    display: none;
+  }
+}
+
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--nojs .navigation__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.navigation--nojs .navigation__item {
+  display: block;
 }

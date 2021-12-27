@@ -12,15 +12,15 @@
       <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Питание для котов Cat Energy.">
       </a>
-      <nav class="navigation">
-          <button class="navigation__toggle" type="button"><span>Открыть меню</span></button>
+      <nav class="navigation navigation--closed navigation--nojs">
+          <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
           <div class="navigation__wrapper">
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a class="navigation__link" href="index.html">главная</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#">каталог продукции</a>
+                <a class="navigation__link navigation__active-catalog" href="#">каталог продукции</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="form.html">подбор программы</a>
@@ -275,5 +275,21 @@
           </div>
         </div>
       </footer>
+      <script>
+        var navMain = document.querySelector('.navigation');
+        var navToggle = document.querySelector('.navigation__toggle');
+
+        navMain.classList.remove('navigation--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('navigation--closed')) {
+            navMain.classList.remove('navigation--closed');
+            navMain.classList.add('navigation--opened');
+          } else {
+            navMain.classList.add('navigation--closed');
+            navMain.classList.remove('navigation--opened');
+          }
+        });
+      </script>
   </body>
 </html>

@@ -97,6 +97,7 @@
 
 .program-example__list {
   display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     margin: 0 120px 0 0;
@@ -107,6 +108,17 @@
   }
 }
 
+.program-example__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $Silver;
+  border-radius: 3px;
+  width: 124px;
+  padding: 14px 0;
+  position: relative;
+}
+
 .program-example__key {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -115,6 +127,7 @@
   line-height: 24px;
   color: $black;
   text-transform: uppercase;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -129,6 +142,13 @@
   font-size: 12px;
   line-height: 100%;
   color: $Tundora;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  background-color: $Concrete;
+  top: 50px;
+  z-index: 1;
+  min-width: 70px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
