@@ -43,6 +43,7 @@
 .nutrition-program__item {
   background-color: $Concrete;
   padding: 30px 33px 18px 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 33px 50px;
@@ -67,6 +68,72 @@
   }
 }
 
+.nutrition-program__item:first-child::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 53px;
+  background-image: url("../img/cat-slim_mobile.png");
+  background-repeat: no-repeat;
+  top: 20px;
+  left: 20px;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 211px;
+    background-image: url("../img/cat-slim_tablet.png");
+    background-repeat: no-repeat;
+    top: 70px;
+    left: 520px;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 211px;
+    background-image: url("../img/cat-slim_desck.png");
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 52px;
+  }
+}
+
+.nutrition-program__item:last-child::before {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 53px;
+  background-image: url("../img/cat-pro_mobile.png");
+  background-repeat: no-repeat;
+  top: 20px;
+  left: 20px;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 268px;
+    height: 211px;
+    background-image: url("../img/cat-pro_tablet.png");
+    background-repeat: no-repeat;
+    top: 70px;
+    left: 490px;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 211px;
+    background-image: url("../img/cat-pro_desck.png");
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 52px;
+  }
+}
+
 .nutrition-program__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -80,6 +147,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin: 0 0 29px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -94,14 +162,17 @@
   font-size: 14px;
   line-height: 18px;
   color: $Tundora;
-  margin: 0 0 38px 0;
+  margin: 0 0 15px 0;
+  padding-bottom: 23px;
   display: flex;
+  border-bottom: 1px solid $Alto;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     font-size: 16px;
     line-height: 24px;
     box-sizing: border-box;
+    border: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,6 +215,11 @@
   background-repeat: no-repeat;
   top: 7px;
   left: 100px;
+
+  @media (min-width: $tablet-width) {
+    left: 115px;
+    top: 9px;
+  }
 }
 
 .nutrition-program__link:hover::before {

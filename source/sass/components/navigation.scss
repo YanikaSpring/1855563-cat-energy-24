@@ -32,6 +32,11 @@
   border-top: 1px solid $Mercury;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    padding: 0;
+  }
 }
 
 .navigation__link {
@@ -72,6 +77,10 @@
   top: 30px;
   left: 0;
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 69px;
+  }
 }
 
 .navigation__active-catalog::before {
@@ -82,6 +91,10 @@
   top: 30px;
   left: 0;
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+  }
 }
 
 .navigation__active-form::before {
@@ -92,6 +105,10 @@
   top: 30px;
   left: 0;
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
 }
 
 .navigation__toggle {

@@ -18,12 +18,10 @@
 .footer__address-wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 280px;
   padding: 26px 20px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    max-width: 628px;
     padding: 56px 70px;
   }
 
@@ -157,10 +155,6 @@
 
 .footer__wrapper-color {
   background-color: $Concrete;
-
-  @media (min-width: $desktop-width) {
-    background-color: $white;
-  }
 }
 
 .footer__logo-image {
