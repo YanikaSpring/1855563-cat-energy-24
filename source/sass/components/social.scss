@@ -1,15 +1,25 @@
+@import "../abstracts/variables.scss";
+
 .social__list {
   list-style-type: none;
   display: flex;
   align-items: center;
   margin: 0 0 46px 0;
-  padding: 0;
+  padding: 20px 70px;
+  border-top: 1px solid $Alto;
+  border-bottom: 1px solid $Alto;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 0;
+    border: none;
   }
 }
 
 .social__item:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 36px;
+}
+
+.social__link {
+  width: 25px;
+  height: 20px;
 }

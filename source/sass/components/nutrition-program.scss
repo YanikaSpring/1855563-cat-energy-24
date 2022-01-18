@@ -68,71 +68,71 @@
   }
 }
 
-.nutrition-program__item:first-child::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 53px;
-  background-image: url("../img/cat-slim_mobile.png");
-  background-repeat: no-repeat;
-  top: 20px;
-  left: 20px;
+// .nutrition-program__item:first-child::before {
+//   content: "";
+//   position: absolute;
+//   width: 50px;
+//   height: 53px;
+//   background-image: url("../img/cat-slim_mobile.png");
+//   background-repeat: no-repeat;
+//   top: 20px;
+//   left: 20px;
 
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 211px;
-    background-image: url("../img/cat-slim_tablet.png");
-    background-repeat: no-repeat;
-    top: 70px;
-    left: 520px;
-  }
+//   @media (min-width: $tablet-width) {
+//     content: "";
+//     position: absolute;
+//     width: 200px;
+//     height: 211px;
+//     background-image: url("../img/cat-slim_tablet.png");
+//     background-repeat: no-repeat;
+//     top: 70px;
+//     left: 520px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 211px;
-    background-image: url("../img/cat-slim_desck.png");
-    background-repeat: no-repeat;
-    top: 40px;
-    left: 52px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     content: "";
+//     position: absolute;
+//     width: 200px;
+//     height: 211px;
+//     background-image: url("../img/cat-slim_desck.png");
+//     background-repeat: no-repeat;
+//     top: 40px;
+//     left: 52px;
+//   }
+// }
 
-.nutrition-program__item:last-child::before {
-  content: "";
-  position: absolute;
-  width: 67px;
-  height: 53px;
-  background-image: url("../img/cat-pro_mobile.png");
-  background-repeat: no-repeat;
-  top: 20px;
-  left: 20px;
+// .nutrition-program__item:last-child::before {
+//   content: "";
+//   position: absolute;
+//   width: 67px;
+//   height: 53px;
+//   background-image: url("../img/cat-pro_mobile.png");
+//   background-repeat: no-repeat;
+//   top: 20px;
+//   left: 20px;
 
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 268px;
-    height: 211px;
-    background-image: url("../img/cat-pro_tablet.png");
-    background-repeat: no-repeat;
-    top: 70px;
-    left: 490px;
-  }
+//   @media (min-width: $tablet-width) {
+//     content: "";
+//     position: absolute;
+//     width: 268px;
+//     height: 211px;
+//     background-image: url("../img/cat-pro_tablet.png");
+//     background-repeat: no-repeat;
+//     top: 70px;
+//     left: 490px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 211px;
-    background-image: url("../img/cat-pro_desck.png");
-    background-repeat: no-repeat;
-    top: 40px;
-    left: 52px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     content: "";
+//     position: absolute;
+//     width: 200px;
+//     height: 211px;
+//     background-image: url("../img/cat-pro_desck.png");
+//     background-repeat: no-repeat;
+//     top: 40px;
+//     left: 52px;
+//   }
+// }
 
 .nutrition-program__title {
   font-family: "Oswald", sans-serif;

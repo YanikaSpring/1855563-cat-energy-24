@@ -42,6 +42,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 20px 0 95px;
+  counter-reset: section;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -99,33 +100,10 @@
   }
 }
 
-
-.program-information__item:first-child::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/leaf.png");
-  top: 10px;
-  left: -75px;
-
+.program-information__item::before {
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/leaf.png");
-    background-repeat: no-repeat;
-    background-color: $Apple;
-    background-position: center;
-    top: 35px;
-    left: 0;
-  }
-}
-
-.program-information__item:first-child::before {
-  @media (min-width: $tablet-width) {
-    content: "1";
+    counter-increment: section;
+    content: counter(section);
     position: absolute;
     font-family: "Oswald", sans-serif;
     font-style: normal;
@@ -138,124 +116,6 @@
     left: 118px;
   }
 }
-
-.program-information__item:nth-child(2)::before {
-  @media (min-width: $tablet-width) {
-    content: "2";
-    position: absolute;
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 280px;
-    line-height: 280px;
-    color: $Concrete;
-    z-index: -1;
-    top: 0;
-    left: 118px;
-  }
-}
-
-.program-information__item:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/water.png");
-  top: 10px;
-  left: -75px;
-
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/water.png");
-    background-repeat: no-repeat;
-    background-color: $Apple;
-    background-position: center;
-    top: 35px;
-    left: 0;
-  }
-}
-
-.program-information__item:nth-child(3)::before {
-  @media (min-width: $tablet-width) {
-    content: "3";
-    position: absolute;
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 280px;
-    line-height: 280px;
-    color: $Concrete;
-    z-index: -1;
-    top: 0;
-    left: 118px;
-  }
-}
-
-.program-information__item:nth-child(3)::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/cutlery.png");
-  top: 10px;
-  left: -75px;
-
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/cutlery.png");
-    background-repeat: no-repeat;
-    background-color: $Apple;
-    background-position: center;
-    top: 35px;
-    left: 0;
-  }
-}
-
-.program-information__item:last-child::before {
-  @media (min-width: $tablet-width) {
-    content: "4";
-    position: absolute;
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 280px;
-    line-height: 280px;
-    color: $Concrete;
-    z-index: -1;
-    top: 0;
-    left: 118px;
-  }
-}
-
-.program-information__item:last-child::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/scales.png");
-  top: 10px;
-  left: -75px;
-
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/scales.png");
-    background-repeat: no-repeat;
-    background-color: $Apple;
-    background-position: center;
-    top: 35px;
-    left: 0;
-  }
-}
-
 
 .program-information__description {
   font-family: "Arial", sans-serif;

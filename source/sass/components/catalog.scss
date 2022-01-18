@@ -19,16 +19,25 @@
   font-size: 36px;
   line-height: 36px;
   color: $black;
-  margin: 0 20px 49px 20px;
+  margin: 0 0 10px 0;
+  border-top: 1px solid $Gallery;
+  border-bottom: 1px solid $Gallery;
+  display: block;
+  padding: 27px 0 41px 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    border: 0;
+    margin: 0 0 82px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 165px;
   }
 }
 
 .catalog__list {
-  margin: 0 20px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -60,22 +69,71 @@
   flex-direction: column;
 }
 
+.catalog__extra-item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+    border-bottom: 1px solid $Silver;
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .catalog__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 19px;
+  margin: 0 0 25px 0;
+  border-bottom: 1px solid $Gallery;
+  padding-bottom: 25px;
+  align-items: center;
+
 
   @media (min-width: $tablet-width) {
     background-color: $Concrete;
-    margin-bottom: 60px;
-    padding: 0 0 39px 0;
+    margin-bottom: 141px;
+    padding: 160px 0 39px 0;
     width: 324px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding: 0 0 40px 0;
+    padding: 162px 0 40px 0;
     margin-right: 80px;
+    position: relative;
+  }
+}
+
+.catalog__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -50px;
+    left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -50px;
+    left: 40px;
+  }
+}
+
+.catalog__item:nth-child(even) .catalog__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -80px;
+    left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -80px;
+    left: 40px;
   }
 }
 
@@ -86,6 +144,8 @@
 }
 
 .catalog__item:last-child {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     background-color: $white;
     border: 2px solid $Concrete;
@@ -99,15 +159,38 @@
   }
 }
 
-.catalog__item:nth-child(4n) {
-  @media (min-width: $desktop-width) {
-    margin-right: 0;
+.catalog__item:last-child::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/plus.svg");
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 135px;
+  top: 25px;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/plus.svg");
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 130px;
+    top: 52px;
+
+    @media (min-width: $desktop-width) {
+      left: 90px;
+      top: 52px;
+    }
   }
 }
 
-.catalog__image {
-  @media (min-width: $tablet-width) {
-    margin: 0 0 34px 0;
+.catalog__item:nth-child(4n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
@@ -127,11 +210,15 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 21px 0;
+    margin: 0 0 21px 45px;
     max-width: 154px;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -154,6 +241,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 120px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .catalog__button {
@@ -172,6 +263,10 @@
     padding: 10px 93px;
     display: flex;
     align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 60px;
   }
 }
 
@@ -208,7 +303,7 @@
     font-size: 16px;
     line-height: 18px;
     width: 167px;
-    margin: 0 40px 87px 40px;
+    margin: 0 40px 110px 40px;
   }
 }
 
@@ -222,9 +317,9 @@
   text-transform: uppercase;
   border: 0;
   background-color: $Concrete;
-  padding: 10px 94px;
+  padding: 10px 85px;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 79px;
+    padding: 10px 60px;
   }
 }

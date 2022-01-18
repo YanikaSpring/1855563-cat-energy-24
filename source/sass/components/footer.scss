@@ -30,9 +30,17 @@
     position: absolute;
     background-color: $white;
     top: 95px;
-    left: 509px;
+    left: 110px;
     padding: 58px 80px;
     margin: 0 auto;
+  }
+}
+
+.footer__wrapper-color {
+  background-color: $Concrete;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
   }
 }
 
@@ -83,6 +91,7 @@
   background-color: $Concrete;
   background-position: 50% 0;
   height: 362px;
+  margin: 0 0 39px 0;
 
   @media (min-width: $tablet-width) {
     height: 400px;
@@ -153,12 +162,8 @@
   }
 }
 
-.footer__wrapper-color {
-  background-color: $Concrete;
-}
-
 .footer__logo-image {
-  margin-bottom: 52px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     margin: 63px 50px 55px 30px;
