@@ -1,22 +1,21 @@
 @import "../abstracts/variables.scss";
 @import "../fonts.scss";
 
-.program-information__wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .program-information {
-  margin: 0 0 25px 0;
+  margin: 0 auto 26px auto;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 25px 30px;
+    margin: 0 auto 18px auto;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto 159px auto;
     flex-direction: column;
+    padding: 0;
+    width: 1220px;
   }
 }
 
@@ -27,12 +26,16 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
-  margin: 0 0 0 20px;
+  margin: 0 0 43px 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 28px 10px;
+    margin: 0 0 45px 30px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 42px 0;
   }
 }
 
@@ -41,27 +44,32 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  margin: 0 20px 0 95px;
+  margin: 0 20px 0 100px;
   counter-reset: section;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 0 0 10px;
+    margin: 0;
+    padding: 0 0 20px 30px;
+    border-bottom: 1px solid $Mercury;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    max-width: 1220px;
-    margin: 0 0 0 9px;
+    margin: 0;
+    padding: 0;
+    border: 0;
   }
 }
 
 .program-information__item {
   position: relative;
+  margin: 0 0 26px 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     padding: 141px 0 57px 0;
@@ -71,36 +79,37 @@
   @media (min-width: $desktop-width) {
     padding: 141px 0 57px 0;
     margin: 0;
+    min-width: 250px;
   }
 }
 
 .program-information__item:first-child {
   @media (min-width: $tablet-width) {
-    margin-right: 153px;
+    margin: 0 183px 45px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 80px;
+    margin-right: 75px;
   }
 }
 
 .program-information__item:nth-child(2) {
   @media (min-width: $desktop-width) {
-    margin-right: 77px;
+    margin-right: 75px;
   }
 }
 
 .program-information__item:nth-child(3) {
   @media (min-width: $tablet-width) {
-    margin-right: 153px;
+    margin-right: 180px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 80px;
+    margin-right: 75px;
   }
 }
 
-.program-information__item::before {
+.program-information__item::after {
   @media (min-width: $tablet-width) {
     counter-increment: section;
     content: counter(section);
@@ -112,8 +121,25 @@
     line-height: 280px;
     color: $Concrete;
     z-index: -1;
-    top: 0;
-    left: 118px;
+    top: -10px;
+    left: 113px;
+  }
+}
+
+.program-information__item:first-child::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    line-height: 280px;
+    color: $Concrete;
+    z-index: -1;
+    top: -11px;
+    left: 120px;
   }
 }
 
@@ -124,10 +150,107 @@
   font-size: 14px;
   line-height: 18px;
   color: $Tundora;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
+  }
+}
+
+.program-information__item--leaf {
+  position: relative;
+}
+
+.program-information__item--leaf::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/leaf.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: -2px;
+  left: -80px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $Apple;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    top: 27px;
+    left: 0;
+  }
+}
+
+.program-information__item--water {
+  position: relative;
+}
+
+.program-information__item--water::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/water.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: -2px;
+  left: -80px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $Apple;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    top: 27px;
+    left: 0;
+  }
+}
+
+.program-information__item--cutlery {
+  position: relative;
+}
+
+.program-information__item--cutlery::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/cutlery.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: -2px;
+  left: -80px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $Apple;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    top: 28px;
+    left: 0;
+  }
+}
+
+.program-information__item--scales {
+  position: relative;
+}
+
+.program-information__item--scales::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/scales.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: -2px;
+  left: -80px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $Apple;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    top: 28px;
+    left: 0;
   }
 }

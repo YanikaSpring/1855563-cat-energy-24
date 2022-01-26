@@ -3,9 +3,12 @@
 
 .form-page {
   grid-column: 1 / -1;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
+    margin: 0 auto;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +25,7 @@
   font-size: 36px;
   line-height: 36px;
   color: $black;
-  margin: 0 0 37px 20px;
+  margin: 27px 0 37px 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -43,13 +46,13 @@
   line-height: 18px;
   color: $black;
   text-transform: uppercase;
-  margin: 0 0 39px 20px;
+  margin: 0 0 36px 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 323px;
-    margin: 0 0 66px 71px;
+    margin: 0 0 67px 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,6 +92,72 @@
   }
 }
 
+.form-page__label-name {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $Tundora;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 11px 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 22px 70px;
+  }
+}
+
+.form-page__label-weight {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $Tundora;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 11px 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 20px 70px;
+  }
+}
+
+.form-page__label-age {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $Tundora;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 5px 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 22px 70px;
+  }
+}
+
 .form-page__label-email {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -97,11 +166,12 @@
   flex-direction: row;
   text-transform: uppercase;
   margin: 0 0 14px 20px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin: 0 0 14px 70px;
+    margin: 0 0 19px 70px;
     color: $Tundora;
   }
 
@@ -117,18 +187,23 @@
   display: flex;
   flex-direction: row;
   text-transform: uppercase;
-  align-items: center;
-  margin: 0 0 0 20px;
+  margin: 22px 0 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin: 0 0 14px 70px;
+    margin: 0 0 14px 66px;
     color: $Tundora;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.form-page__telephone-span {
+  @media (min-width: $tablet-width) {
+    margin: 11px 0 0 0;
   }
 }
 
@@ -142,16 +217,17 @@
   text-transform: uppercase;
   border: 1px solid $Mercury;
   background-color: $white;
-  width: 228px;
-  height: 46px;
-  margin-left: 12px;
+  width: 212px;
+  height: 44px;
+  margin: 2px 0 0 13px;
   padding: 0 0 0 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 0 0 2px 18px;
-    width: 550px;
+    padding: 0 0 0 18px;
+    height: 48px;
+    width: 549px;
     margin: 0 0 0 16px;
   }
 
@@ -172,9 +248,9 @@
   text-transform: uppercase;
   border: 1px solid $Mercury;
   background-color: $white;
-  width: 204px;
-  height: 45px;
-  margin-left: 16px;
+  width: 187px;
+  height: 44px;
+  margin: 2px 0 0 16px;
   padding: 0 0 0 15px;
 
   @media (min-width: $tablet-width) {
@@ -201,17 +277,18 @@
   text-transform: uppercase;
   border: 1px solid $Mercury;
   background-color: $white;
-  width: 172px;
-  height: 45px;
-  margin-left: 12px;
+  width: 155px;
+  height: 44px;
+  margin: 2px 8px 0 0;
   padding: 0 0 0 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding: 0 0 0 18px;
-    width: 479px;
+    width: 477px;
     margin: 0 0 0 10px;
+    height: 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -223,12 +300,12 @@
   border-top: 1px solid $Mercury;
   border-bottom: 1px solid $Mercury;
   margin: 0;
-  padding: 22px 0 19px 40px;
+  padding: 28px 0 0 46px;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $Mercury;
-    margin: 22px 0 45px 71px;
+    margin: 22px 0 45px 68px;
     padding: 30px 0 9px 90px;
     width: 540px;
   }
@@ -247,7 +324,7 @@
   line-height: 18px;
   color: $MineShaft;
   text-transform: uppercase;
-  margin: 0 0 20px 20px;
+  margin: 0 0 25px 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 22px 0;
@@ -280,13 +357,13 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 19px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 72px 70px;
+    margin: 0 0 72px 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -304,18 +381,18 @@
   text-transform: uppercase;
   border: 1px solid $Mercury;
   background-color: $white;
-  margin: 0 0 0 8px;
-  width: 219px;
+  margin: 0 0 0 10px;
+  width: 203px;
   height: 45px;
   padding: 0 0 0 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 2px 0 5px 18px;
+    padding: 4px 0 5px 18px;
     width: 530px;
-    height: 47px;
-    margin: 0 0 0 20px;
+    height: 46px;
+    margin: 2px 0 0 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -324,19 +401,6 @@
     margin: 0 0 0 21px;
   }
 }
-
-// .form-page__contacts::before {
-//   content: "";
-//   position: absolute;
-//   background-image: url("../img/icon_email_mob.svg");
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   width: 20px;
-//   height: 14px;
-//   top: 15px;
-//   right: 60px;
-// }
-
 
 .form-page__input-telephone {
   font-family: "Oswald", sans-serif;
@@ -348,18 +412,19 @@
   text-transform: uppercase;
   border: 1px solid $Mercury;
   background-color: $white;
-  margin: 0 0 0 8px;
-  width: 204px;
-  height: 45px;
-  padding: 0 0 0 15px;
+  margin: -10px 0 0 8px;
+  width: 189px;
+  height: 44px;
+  padding: 0 0 0 16px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 5px 0 5px 18px;
-    width: 530px;
-    margin: 0 0 0 10px;
+    padding: 3px 0 5px 20px;
+    width: 517px;
+    margin: 0 0 0 15px;
+    height: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -369,18 +434,6 @@
   }
 }
 
-// .form-page__contacts::after {
-//   content: "";
-//   position: absolute;
-//   background-image: url("../img/phone_mob.svg");
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   width: 20px;
-//   height: 20px;
-//   top: 70px;
-//   right: 60px;
-// }
-
 .form-page__form-comment {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -388,12 +441,12 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
-  margin: 0 0 38px 20px;
+  margin: 0 0 38px 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 15px 0 76px 70px;
+    margin: 15px 0 76px 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -411,15 +464,16 @@
   text-transform: uppercase;
   border: 1px solid $Mercury;
   background-color: $white;
-  width: 280px;
-  height: 150px;
+  width: 263px;
+  height: 140px;
   padding: 9px 0 0 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 617px;
+    width: 614px;
     height: 162px;
+    padding: 9px 0 0 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -435,7 +489,7 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
-  margin: 0 0 0 20px;
+  margin: 0 0 37px 19px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -450,11 +504,14 @@
 }
 
 .form-page__add-list {
+  margin: 0 0 0 6px;
+  list-style-type: none;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    margin: 0 0 0 90px;
+    margin: 0 0 2px 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -470,7 +527,7 @@
   line-height: 18px;
   color: $black;
   text-transform: uppercase;
-  margin: 0 0 20px 20px;
+  margin: 0 0 25px 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -515,12 +572,12 @@
   text-transform: uppercase;
   border: 0;
   background-color: $Apple;
-  padding: 10px 76px;
-  margin: 0 0 0 20px;
+  padding: 10px 78px;
+  margin: 0 0 6px 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 0;
-    padding: 13px 63px;
+    padding: 16px 64px;
     font-size: 20px;
   }
 
@@ -544,14 +601,19 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 61px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0;
   }
 }
 
 .form-page__button-wrapper {
+  margin: 0 0 32px 0;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    margin: 0 0 72px 73px;
+    margin: 0 0 72px 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -559,10 +621,42 @@
   }
 }
 
-.form-page__form-fieldset {
-  margin: 0 0 30px 0;
+.form-page__fieldset-cat {
+  margin: 0 0 17px 0;
   border: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 28px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 3px 0;
+  }
+}
+
+.form-page__fieldset-programm {
+  margin: 0 0 25px 0;
+  border: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 3px 0;
+  }
+}
+
+.form-page__fieldset-owner {
+  margin: 0 0 23px 0;
+  border: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 3px 0;
@@ -572,5 +666,90 @@
 .form-page__form-br {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.form-page__fieldset-comment {
+  margin: 0 0 10px 0;
+  border: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 29px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 3px 0;
+  }
+}
+
+.form-page__fieldset-add {
+  margin: 0 0 16px 0;
+  border: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 3px 0;
+  }
+}
+
+.form-page__container-email {
+  position: relative;
+}
+
+.form-page__container-email::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 15px;
+  background-image: url("../img/icon_email_mob.svg");
+  background-repeat: no-repeat;
+  top: 17px;
+  right: 15px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 15px;
+    background-image: url("../img/icon_email.svg");
+    background-repeat: no-repeat;
+    top: 23px;
+    right: 19px;
+  }
+}
+
+.form-page__container-telephone {
+  position: relative;
+}
+
+.form-page__container-telephone::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/phone_mob.svg");
+  background-repeat: no-repeat;
+  top: 2px;
+  right: 15px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    top: 16px;
+    right: 20px;
+  }
+}
+
+.form-page__age {
+  margin: 0 15px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 3px 9px 0 0;
   }
 }

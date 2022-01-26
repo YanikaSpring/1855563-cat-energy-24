@@ -2,25 +2,53 @@
 @import "../fonts.scss";
 
 .slider {
-  background-color: $Concrete;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 0 20px 40px 20px;
+  position: relative;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     background-color: $Concrete;
+    min-height: 425px;
+    justify-content: flex-end;
+    padding: 0 0 40px 0;
+    margin: 0 auto;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+    width: 610px;
+    margin: 0;
+    height: 385px;
+    padding: 0 20px 0 20px;
+  }
+}
+
+.slider__wrapper-color {
+  background-color: $Concrete;
+
+  @media (min-width: $tablet-width) {
+    background-color: $Concrete;
   }
 }
 
 .slider__button-wrapper {
   display: flex;
-  justify-content: space-around;
+  padding: 0 0 0 35px;
   margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px 23px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    justify-content: space-between;
+    padding: 0 80px 33px 50px;
+  }
 }
 
 .slider__button {
@@ -34,4 +62,97 @@
   background-color: transparent;
   color: $black;
   cursor: pointer;
+  margin: 0 12px 0 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $Alto;
+    margin: 0 25px 0 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $Alto;
+    margin: 0 10px 0 0;
+    padding: 0;
+  }
+}
+
+.slider__image {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -169px;
+    left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -179px;
+    left: 20px;
+  }
+}
+
+.slider__range-bar {
+  width: 85px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid $Alto;
+  background-color: $white;
+  margin: 1px 9px 0 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 426px;
+    border: 0;
+    background-color: $Alto;
+    height: 6px;
+    border-radius: 6px;
+    margin: 12px 22px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 6px;
+    background-color: $Alto;
+    border-radius: 6px;
+    margin-top: 12px;
+    position: relative;
+  }
+}
+
+.slider__range-bar::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  background-color: $Apple;
+  border-radius: 6px;
+  left: 6px;
+  top: 4px;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/slider_control_desk.svg");
+    background-repeat: no-repeat;
+    top: -16px;
+    left: 194px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/slider_control_desk.svg");
+    background-repeat: no-repeat;
+    top: -16px;
+    left: 170px;
+  }
 }

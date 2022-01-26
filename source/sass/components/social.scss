@@ -4,10 +4,12 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  margin: 0 0 46px 0;
-  padding: 20px 70px;
+  justify-content: center;
+  margin: 0 0 19px 0;
+  padding: 20px 0 15px 0;
   border-top: 1px solid $Alto;
   border-bottom: 1px solid $Alto;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 0;
@@ -15,11 +17,6 @@
   }
 }
 
-.social__item:not(:last-child) {
-  margin-right: 36px;
-}
-
-.social__link {
-  width: 25px;
-  height: 20px;
+.social__item {
+  margin-right: 20px;
 }

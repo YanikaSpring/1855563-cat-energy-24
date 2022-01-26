@@ -4,20 +4,21 @@
 .header {
   display: flex;
   flex-direction: column;
-  margin: 0 0 205px 0;
+  margin: 0 auto 198px auto;
   position: relative;
   min-width: 320px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin: 0 0 340px 117px;
+    margin: 0 auto 628px auto;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    margin: 0 auto 180px auto;
+    margin: 0 auto 177px auto;
     width: 1220px;
   }
 }
@@ -26,7 +27,7 @@
   display: flex;
   flex-direction: column;
   background-image: url("../img/cat-green-mobile.jpg");
-  background-color: $Apple;
+  background-color: $Apple-dark;
   background-repeat: no-repeat;
   padding: 27px 30px 164px 30px;
   background-position: 50% 0;
@@ -37,14 +38,18 @@
     min-width: 420px;
     background-color: $white;
     background-image: none;
+    margin: 0 0 0 117px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     min-width: 420px;
+    margin: 20px 0 194px 80px;
   }
 }
+
 
 .header__title {
   font-family: "Oswald", sans-serif;
@@ -62,10 +67,12 @@
     font-size: 60px;
     line-height: 60px;
     text-align: start;
+    margin: 0 0 42px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 18px;
+    margin: 0 0 40px 0;
+    padding: 0;
   }
 }
 
@@ -76,16 +83,32 @@
   font-size: 14px;
   line-height: 14px;
   color: $white;
-  text-align: center;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     color: $black;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
+    margin: 0 0 0 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.header__wrapper-position {
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 768px;
   }
 }
 
@@ -100,20 +123,23 @@
   text-decoration: none;
   background-color: $Apple;
   text-align: center;
-  padding: 10px 65px;
+  padding: 10px 0;
+  width: 280px;
+  justify-content: center;
   position: absolute;
-  top: 450px;
-  left: 20px;
+  top: 138px;
+  left: -140px;
   display: flex;
-  align-self: center;
 
   @media (min-width: $tablet-width) {
     z-index: 1;
     display: block;
     align-self: flex-start;
     position: absolute;
-    top: 280px;
-    padding: 14px 40px;
+    top: 47px;
+    left: 121px;
+    padding: 17px 0;
+    width: 244px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -122,28 +148,26 @@
     order: 0;
     display: block;
     align-self: flex-start;
-    padding: 14px 26px;
+    padding: 17px 0;
     position: absolute;
-    top: 272px;
+    top: 253px;
+    left: -419px;
   }
 }
 
 .header__image {
   position: absolute;
-  top: 165px;
-  left: 23px;
+  top: -136px;
+  left: -139px;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
-    margin: 0;
-    padding: 0;
     position: absolute;
-    top: 200px;
-    left: 23px;
+    top: 20px;
+    left: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 50px;
-    left: 530px;
+    top: -63px;
+    left: -53px;
   }
 }

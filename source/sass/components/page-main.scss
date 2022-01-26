@@ -1,6 +1,9 @@
+@import "../abstracts/variables.scss";
+
 .page-main {
   grid-column: 1 / -1;
   margin: 0;
+  // min-width: 320px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
@@ -8,5 +11,22 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
+  }
+}
+
+.page-main--index::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 676px;
+    background-color: $Apple-dark;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: right;
   }
 }
