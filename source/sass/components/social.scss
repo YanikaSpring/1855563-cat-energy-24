@@ -1,22 +1,55 @@
 @import "../abstracts/variables.scss";
 
+.social {
+  @media (min-width: $tablet-width) {
+    margin: 0 135px 0 0;
+    padding: 0;
+    width: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 393px 0 0;
+  }
+}
+
 .social__list {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin: 0 0 19px 0;
-  padding: 20px 0 15px 0;
   border-top: 1px solid $Alto;
   border-bottom: 1px solid $Alto;
   width: 280px;
+  padding: 16px 0 12px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 0;
+    margin: 0;
     border: none;
+    width: 125px;
   }
 }
 
 .social__item {
-  margin-right: 20px;
+  margin-right: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 26px 0 0;
+  }
+}
+
+.social__item:first-child {
+  margin: 0 25px 0 80px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 28px 0 0;
+  }
+}
+
+.social__icon:hover {
+  fill: $Apple;
+}
+
+.social__icon:active {
+  fill: $Apple;
+  opacity: 0.3;
 }

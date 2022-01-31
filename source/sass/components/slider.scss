@@ -5,7 +5,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 0 20px 40px 20px;
+  padding: 0 20px 43px 20px;
   position: relative;
   width: 320px;
 
@@ -47,7 +47,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     justify-content: space-between;
-    padding: 0 80px 33px 50px;
+    padding: 1px 27px 33px 12px;
   }
 }
 
@@ -62,7 +62,7 @@
   background-color: transparent;
   color: $black;
   cursor: pointer;
-  margin: 0 12px 0 0;
+  margin: 0 12px 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -76,23 +76,40 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $Alto;
-    margin: 0 10px 0 0;
+    margin: 0;
     padding: 0;
   }
 }
 
+.slider__button:hover {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $Alto;
+  }
+}
+
+.slider__button:active {
+  @media (min-width: $tablet-width) {
+    border-bottom: 0;
+  }
+}
+
+.slider__button:last-child {
+  margin-left: 0;
+}
+
 .slider__image {
-  margin: 0;
+  margin: -1px 0 4px 20px;
+  display: flex;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -169px;
-    left: 90px;
+    top: -167px;
+    left: 69px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -179px;
-    left: 20px;
+    top: -177px;
+    left: 0;
   }
 }
 
@@ -102,7 +119,7 @@
   border-radius: 6px;
   border: 1px solid $Alto;
   background-color: $white;
-  margin: 1px 9px 0 0;
+  margin: 2px 9px 0 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -118,8 +135,10 @@
     height: 6px;
     background-color: $Alto;
     border-radius: 6px;
-    margin-top: 12px;
+    margin: 12px 0 0 0;
     position: relative;
+    width: 426px;
+    padding: 0;
   }
 }
 
@@ -143,6 +162,7 @@
     top: -16px;
     left: 194px;
     background-color: transparent;
+    cursor: pointer;
   }
 
   @media (min-width: $desktop-width) {
@@ -152,7 +172,23 @@
     height: 38px;
     background-image: url("../img/slider_control_desk.svg");
     background-repeat: no-repeat;
+    top: -15px;
+    left: 193px;
+  }
+}
+
+
+.slider__range-bar::before:active {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/slider_control_pressed.svg");
+    background-repeat: no-repeat;
     top: -16px;
-    left: 170px;
+    left: 194px;
+    background-color: transparent;
+    cursor: pointer;
   }
 }

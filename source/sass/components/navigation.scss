@@ -86,7 +86,7 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    width: 69px;
+    width: 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,7 +106,13 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    width: 165px;
+    width: 154px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    top: 35px;
+    left: 1px;
   }
 }
 
@@ -121,6 +127,11 @@
 
   @media (min-width: $tablet-width) {
     width: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    top: 35px;
   }
 }
 
@@ -139,13 +150,18 @@
   }
 }
 
-
 .navigation__item:not(:last-child) {
   @media (min-width: $tablet-width) {
-    margin-right: 35px;
+    margin-right: 36px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: 34px;
+  }
+}
+
+.navigation__item:first-child {
+  @media (min-width: $tablet-width) {
     margin-right: 34px;
   }
 }

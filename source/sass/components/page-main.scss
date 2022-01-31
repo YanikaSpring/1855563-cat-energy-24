@@ -19,7 +19,7 @@
     position: absolute;
     content: "";
     width: 50%;
-    height: 676px;
+    height: 694px;
     background-color: $Apple-dark;
     top: 0;
     right: 0;
@@ -28,5 +28,9 @@
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }

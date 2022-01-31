@@ -254,3 +254,9 @@
     left: 0;
   }
 }
+
+.program-information__br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
