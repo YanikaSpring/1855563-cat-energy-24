@@ -1,7 +1,7 @@
 @import "../abstracts/variables.scss";
 @import "../fonts.scss";
 
-.slider {
+.slider__container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
   }
 }
 
-.slider__wrapper-color {
+.slider {
   background-color: $Concrete;
 
   @media (min-width: $tablet-width) {
@@ -105,6 +105,8 @@
     position: absolute;
     top: -167px;
     left: 69px;
+    width: 592px;
+    height: 511px;
   }
 
   @media (min-width: $desktop-width) {

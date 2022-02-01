@@ -1,7 +1,7 @@
 @import "../abstracts/variables.scss";
 @import "../fonts.scss";
 
-.add-product {
+.add-product__container {
   padding: 0 20px;
   margin: 0 auto 33px auto;
   width: 320px;
@@ -21,7 +21,7 @@
   }
 }
 
-.add-product__container {
+.add-product {
   position: relative;
 }
 

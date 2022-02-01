@@ -11,14 +11,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin: 0 auto 628px auto;
+    margin: 10px auto 628px auto;
     width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    margin: 0 auto 177px auto;
+    margin: 15px auto 177px auto;
     width: 1220px;
   }
 }
@@ -177,10 +177,14 @@
     position: absolute;
     top: 20px;
     left: 30px;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
     top: -63px;
     left: -53px;
+    width: 552px;
+    height: 499px;
   }
 }

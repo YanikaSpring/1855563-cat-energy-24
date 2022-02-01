@@ -45,11 +45,32 @@
   }
 }
 
-.social__icon:hover {
+.social__icon-facebook {
+  fill: $Concrete;
+  stroke: $DoveGray;
+}
+
+.social__icon-facebook:hover {
+  stroke: $Apple;
+}
+
+.social__icon-facebook:active {
+  stroke: $Apple;
+  opacity: 0.3;
+}
+
+.social__icon-vk,
+.social__icon-inst {
+  fill: $DoveGray;
+}
+
+.social__icon-vk:hover,
+.social__icon-inst:hover {
   fill: $Apple;
 }
 
-.social__icon:active {
+.social__icon-vk:active,
+.social__icon-inst:active {
   fill: $Apple;
   opacity: 0.3;
 }

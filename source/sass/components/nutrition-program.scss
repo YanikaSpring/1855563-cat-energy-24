@@ -125,16 +125,16 @@
   height: 50px;
   background-image: url("../img/cat-pro_mobile.svg");
   background-repeat: no-repeat;
-  top: -5px;
-  left: -80px;
+  top: 24px;
+  left: 13px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/cat-pro_tablet.svg");
     background-repeat: no-repeat;
     width: 268px;
     height: 200px;
-    top: 15px;
-    left: 360px;
+    top: 90px;
+    left: 411px;
   }
 
   @media (min-width: $desktop-width) {
@@ -142,8 +142,8 @@
     background-repeat: no-repeat;
     width: 134px;
     height: 100px;
-    top: -29px;
-    left: -182px;
+    top: 47px;
+    left: 33px;
   }
 }
 

@@ -874,22 +874,27 @@
   z-index: -1;
 }
 
-.form-page__input--condition:hover {
+.form-page__input-name--condition:hover,
+.form-page__input-weight--condition:hover,
+.form-page__input-age--condition:hover,
+.form-page__input-mail--condition:hover,
+.form-page__input-telephone--condition:hover,
+.form-page__comment--condition:hover {
   border: 1px solid $Silver;
 }
 
-.form-page__input--condition:active {
+.form-page__input-name--condition:active,
+.form-page__input-weight--condition:active,
+.form-page__input-age--condition:active,
+.form-page__input-mail--condition:active,
+.form-page__input-telephone--condition:active {
   border: 2px solid $Tundora;
 }
 
-.form-page__input--condition:invalid {
+.form-page__input-name--condition:invalid,
+.form-page__input-weight--condition:invalid,
+.form-page__input-age--condition:invalid,
+.form-page__input-mail--condition:invalid,
+.form-page__input-telephone--condition:invalid {
   border: 2px solid $VividTangerine;
-}
-
-.form-page__container-email::before:active {
-  fill: $Apple;
-}
-
-.form-page__container-email::before:invalid {
-  fill: $VividTangerine;
 }

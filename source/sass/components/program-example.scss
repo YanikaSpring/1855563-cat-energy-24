@@ -1,7 +1,7 @@
 @import "../fonts.scss";
 @import "../abstracts/variables.scss";
 
-.program-example__wrapper {
+.program-example {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -22,7 +22,7 @@
   }
 }
 
-.program-example__wrapper-color {
+.program-example__container {
   background-color: $Concrete;
 
   @media (min-width: $tablet-width) {
@@ -30,7 +30,7 @@
   }
 }
 
-.program-example {
+.program-example__wrapper {
   background-color: $Concrete;
   display: flex;
   flex-direction: column;
