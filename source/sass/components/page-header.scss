@@ -4,28 +4,27 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  margin: 9px auto 12px auto;
+  margin: 9px auto 0 auto;
   padding: 0;
   grid-column: 1 / -1;
   width: 320px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: row;
-    width: 768px;
     grid-column: 1 / -1;
     margin: 0 auto 50px auto;
-    padding: 25px 0 0 61px;
+    padding: 25px 0 0 14px;
+    width: 708px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     display: flex;
     flex-direction: row;
-    max-width: 1220px;
     grid-column: 1 / -1;
     margin: 54px auto 72px auto;
     justify-content: start;
-    min-width: 1440px;
+    width: 1220px;
     padding: 0;
   }
 }
@@ -33,12 +32,12 @@
 .page-header__logo-image {
   margin: 2px 0 0 20px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     margin: 0 94px 0 0;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 0 540px 0 110px;
+  @media (min-width: $desktopWidth) {
+    margin: 0 540px 0 9px;
   }
 }
 

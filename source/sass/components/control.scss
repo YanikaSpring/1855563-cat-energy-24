@@ -12,9 +12,9 @@
   width: 30px;
   height: 30px;
   background-color: $white;
-  border: 1px solid $Silver;
+  border: 1px solid $silver;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     width: 39px;
     height: 39px;
     left: -60px;
@@ -22,8 +22,16 @@
   }
 }
 
+.control__mark:hover {
+  border: 1px solid $silverDark;
+}
+
 .control__mark:active {
   opacity: 0.3;
+}
+
+.control__input:focus + .control__mark {
+  outline: 1px solid $silverDark;
 }
 
 .control__input[type="checkbox"]:checked + .control__mark::before {
@@ -36,7 +44,7 @@
   width: 22px;
   height: 26px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     top: 8px;
     left: 5px;
     height: 30px;
@@ -53,11 +61,11 @@
   left: 8px;
   width: 13px;
   height: 13px;
-  background-color: $Apple;
+  background-color: $apple;
   border-radius: 50%;
   content: "";
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     width: 18px;
     height: 18px;
     top: 9px;

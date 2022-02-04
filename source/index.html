@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="icon_facebook">
         <g>
@@ -75,8 +79,11 @@
         <div class="header__wrapper-position">
           <a class="header__link" href="form.html">подобрать программу</a>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-energy-eat-desk.webp 1x, img/cat-energy-eat-desk@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/cat-energy-eat-desk.png 1x, img/cat-energy-eat-desk@2x.png 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-energy-eat-tablet.webp 1x, img/cat-energy-eat-tablet@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/cat-energy-eat-tablet.png 1x, img/cat-energy-eat-tablet@2x.png 2x">
+            <source type="image/webp" srcset="img/cat-energy-eat.webp 1x, img/cat-energy-eat@2x@2x.webp 2x">
             <img class="header__image" src="img/cat-energy-eat.png" width="280" height="270" srcset="img/cat-energy-eat@2x.png" alt="функциональное питание для котов.">
           </picture>
       </div>
@@ -109,7 +116,7 @@
             <p class="program-information__description">Замените один-два приема<br> обычной еды на наше<br> функциональное питание.</p>
           </li>
           <li class="program-information__item  program-information__item--scales">
-            <p class="program-information__description">Уже через месяц<br class="program-information__br"> наслаждайтесь<br class="program-information__br--tablet"> изменениями<br class="program-information__br"> к лучшему<br class="program-information__br--tablet"> вашего питомца!</p>
+            <p class="program-information__description">Уже через месяц &nbsp;<br class="program-information__br">наслаждайтесь<br class="program-information__br--tablet"> изменениями<br class="program-information__br"> к лучшему<br class="program-information__br--tablet"> вашего питомца!</p>
           </li>
         </ul>
       </div>
@@ -136,7 +143,9 @@
         <div class="slider">
           <div class="slider__container">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-cat_tablet.webp 1x, img/before-cat_tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/before-cat_tablet.png 1x, img/before-cat_tablet@2x.png 2x">
+              <source type="image/webp" srcset="img/before-cat.webp 1x, img/before-cat.webp 2x">
               <img class="slider__image" src="img/before-cat.png" width="280" height="232" alt="Результат диеты." srcset="img/before-cat@2x.png">
             </picture>
             <div class="slider__button-wrapper">

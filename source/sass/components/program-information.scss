@@ -2,19 +2,19 @@
 @import "../fonts.scss";
 
 .program-information {
-  margin: 0 auto 26px auto;
+  margin: 0 auto 25px auto;
   width: 320px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     margin: 0 auto 18px auto;
-    width: 768px;
+    width: 709px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     display: flex;
     margin: 0 auto 159px auto;
     flex-direction: column;
-    padding: 0;
+    padding: 0 0 0 15px;
     width: 1220px;
   }
 }
@@ -28,13 +28,13 @@
   color: $black;
   margin: 0 0 43px 20px;
 
-  @media (min-width: $tablet-width) {
-    margin: 0 0 45px 30px;
+  @media (min-width: $tabletWidth) {
+    margin: 0 0 45px 9px;
     font-size: 60px;
     line-height: 60px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     margin: 0 0 42px 0;
   }
 }
@@ -47,19 +47,19 @@
   margin: 0 20px 0 100px;
   counter-reset: section;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
-    padding: 0 0 20px 30px;
-    border-bottom: 1px solid $Mercury;
+    padding: 0 0 20px 9px;
+    border-bottom: 1px solid $mercury;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     border: 0;
@@ -71,46 +71,49 @@
   margin: 0 0 26px 0;
   padding: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     padding: 141px 0 57px 0;
     position: relative;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     padding: 141px 0 57px 0;
     margin: 0;
-    min-width: 250px;
+    width: 250px;
   }
 }
 
 .program-information__item:first-child {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     margin: 0 183px 45px 0;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-right: 75px;
+  @media (min-width: $desktopWidth) {
+    margin-right: 94px;
+    width: 230px;
   }
 }
 
 .program-information__item:nth-child(2) {
-  @media (min-width: $desktop-width) {
-    margin-right: 75px;
+  @media (min-width: $desktopWidth) {
+    margin-right: 80px;
+    width: 246px;
   }
 }
 
 .program-information__item:nth-child(3) {
-  @media (min-width: $tablet-width) {
-    margin-right: 180px;
+  @media (min-width: $tabletWidth) {
+    margin-right: 179px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-right: 75px;
+  @media (min-width: $desktopWidth) {
+    margin-right: 72px;
+    width: 248px;
   }
 }
 
 .program-information__item::after {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     counter-increment: section;
     content: counter(section);
     position: absolute;
@@ -119,7 +122,7 @@
     font-weight: normal;
     font-size: 280px;
     line-height: 280px;
-    color: $Concrete;
+    color: $concrete;
     z-index: -1;
     top: -10px;
     left: 113px;
@@ -127,7 +130,7 @@
 }
 
 .program-information__item:first-child::after {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     counter-increment: section;
     content: counter(section);
     position: absolute;
@@ -136,7 +139,7 @@
     font-weight: normal;
     font-size: 280px;
     line-height: 280px;
-    color: $Concrete;
+    color: $concrete;
     z-index: -1;
     top: -11px;
     left: 120px;
@@ -149,10 +152,10 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: $Tundora;
+  color: $tundora;
   margin: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
@@ -173,8 +176,8 @@
   top: -2px;
   left: -80px;
 
-  @media (min-width: $tablet-width) {
-    background-color: $Apple;
+  @media (min-width: $tabletWidth) {
+    background-color: $apple;
     width: 80px;
     height: 80px;
     background-position: center;
@@ -197,8 +200,8 @@
   top: -2px;
   left: -80px;
 
-  @media (min-width: $tablet-width) {
-    background-color: $Apple;
+  @media (min-width: $tabletWidth) {
+    background-color: $apple;
     width: 80px;
     height: 80px;
     background-position: center;
@@ -221,8 +224,8 @@
   top: -2px;
   left: -80px;
 
-  @media (min-width: $tablet-width) {
-    background-color: $Apple;
+  @media (min-width: $tabletWidth) {
+    background-color: $apple;
     width: 80px;
     height: 80px;
     background-position: center;
@@ -245,8 +248,8 @@
   top: -2px;
   left: -80px;
 
-  @media (min-width: $tablet-width) {
-    background-color: $Apple;
+  @media (min-width: $tabletWidth) {
+    background-color: $apple;
     width: 80px;
     height: 80px;
     background-position: center;
@@ -256,7 +259,17 @@
 }
 
 .program-information__br {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     display: none;
+  }
+}
+
+.program-information__br--tablet {
+  @media (min-width: $mobileWidthOnly) {
+    display: none;
+  }
+
+  @media (min-width: $tabletWidth) {
+    display: block;
   }
 }

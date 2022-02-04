@@ -11,16 +11,16 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: 0;
+  margin: 12px 0 0 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: row;
     min-width: 440px;
     margin-top: 18px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     display: flex;
     flex-direction: row;
     min-width: 480px;
@@ -29,14 +29,21 @@
 }
 
 .navigation__item {
-  padding: 22px 0 22px 0;
-  border-top: 1px solid $Mercury;
+  padding: 23px 0 22px 0;
+  border-top: 1px solid $mercury;
   display: flex;
   justify-content: center;
+  text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     border: 0;
     padding: 0;
+  }
+}
+
+.navigation__item:last-child {
+  @media (min-width: $tabletWidth) {
+    padding: 0 0 12px 1px;
   }
 }
 
@@ -44,27 +51,30 @@
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   position: relative;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     font-size: 18px;
     line-height: 24px;
+    font-weight: 400;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     font-size: 20px;
     line-height: 30px;
+    font-weight: 400;
   }
 }
 
 .navigation__link--color {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     color: $white;
+    font-weight: 400;
   }
 }
 
@@ -77,39 +87,39 @@
 }
 
 .navigation__active-index::before {
-  content: "";
-  width: 76px;
-  height: 2px;
-  background-color: $Apple;
-  top: 30px;
-  left: 0;
-  position: absolute;
-
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
+    content: "";
     width: 64px;
+    height: 2px;
+    background-color: $apple;
+    top: 30px;
+    left: 0;
+    position: absolute;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
+    content: "";
     top: 36px;
+    left: 0;
     width: 68px;
+    position: absolute;
     background-color: $white;
+    z-index: 1;
   }
 }
 
 .navigation__active-catalog::before {
-  content: "";
-  width: 181px;
-  height: 2px;
-  background-color: $Apple;
-  top: 30px;
-  left: 0;
-  position: absolute;
-
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     width: 154px;
+    content: "";
+    height: 2px;
+    background-color: $apple;
+    top: 30px;
+    left: 0;
+    position: absolute;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     width: 168px;
     top: 35px;
     left: 1px;
@@ -117,19 +127,17 @@
 }
 
 .navigation__active-form::before {
-  content: "";
-  width: 180px;
-  height: 2px;
-  background-color: $Apple;
-  top: 30px;
-  left: 0;
-  position: absolute;
-
-  @media (min-width: $tablet-width) {
-    width: 153px;
+  @media (min-width: $tabletWidth) {
+    content: "";
+    width: 154px;
+    height: 2px;
+    background-color: $apple;
+    top: 30px;
+    left: 0;
+    position: absolute;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     width: 168px;
     top: 35px;
   }
@@ -145,23 +153,23 @@
   cursor: pointer;
   border: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     display: none;
   }
 }
 
 .navigation__item:not(:last-child) {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     margin-right: 36px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     margin-right: 34px;
   }
 }
 
 .navigation__item:first-child {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     margin-right: 34px;
   }
 }
@@ -179,7 +187,7 @@
 
 .navigation--opened .navigation__toggle {
   top: -35px;
-  right: 0;
+  right: 18px;
 
   &::before,
   &::after {
@@ -193,7 +201,7 @@
   }
 
   &::before {
-    transform: rotate(45deg);
+    transform: rotate(46deg);
     box-shadow: none;
   }
 
@@ -202,7 +210,7 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: $mobileWidthOnly) {
   .navigation--closed .navigation__item {
     display: none;
   }

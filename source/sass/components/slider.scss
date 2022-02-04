@@ -5,20 +5,20 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 0 20px 43px 20px;
+  padding: 30px 0 40px 0;
   position: relative;
-  width: 320px;
+  width: 280px;
 
-  @media (min-width: $tablet-width) {
-    background-color: $Concrete;
+  @media (min-width: $tabletWidth) {
+    background-color: $concrete;
     min-height: 425px;
     justify-content: flex-end;
     padding: 0 0 40px 0;
     margin: 0 auto;
-    width: 768px;
+    width: 709px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     position: relative;
     width: 610px;
     margin: 0;
@@ -28,31 +28,33 @@
 }
 
 .slider {
-  background-color: $Concrete;
+  background-color: $concrete;
 
-  @media (min-width: $tablet-width) {
-    background-color: $Concrete;
+  @media (min-width: $tabletWidth) {
+    background-color: $concrete;
   }
 }
 
 .slider__button-wrapper {
   display: flex;
-  padding: 0 0 0 35px;
-  margin-top: 15px;
+  padding: 0;
+  margin: 15px 0 0 0;
+  width: 280px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 50px 23px 100px;
+  @media (min-width: $tabletWidth) {
+    padding: 0 50px 23px 81px;
+    width: 591px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     margin: 0;
     justify-content: space-between;
-    padding: 1px 27px 33px 12px;
+    padding: 1px 0 33px 5px;
   }
 }
 
 .slider__button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -62,46 +64,46 @@
   background-color: transparent;
   color: $black;
   cursor: pointer;
-  margin: 0 12px 0 20px;
+  margin: 0 12px 0 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px dotted $Alto;
+    border-bottom: 1px dotted $alto;
     margin: 0 25px 0 0;
     padding: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px dotted $Alto;
-    margin: 0;
+    border-bottom: 1px dotted $alto;
+    margin: 0 0 0 7px;
     padding: 0;
   }
 }
 
 .slider__button:hover {
-  @media (min-width: $tablet-width) {
-    border-bottom: 1px solid $Alto;
+  @media (min-width: $tabletWidth) {
+    border-bottom: 1px solid $alto;
   }
 }
 
 .slider__button:active {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     border-bottom: 0;
   }
 }
 
 .slider__button:last-child {
-  margin-left: 0;
+  margin: 0 11px 0 0;
 }
 
 .slider__image {
-  margin: -1px 0 4px 20px;
+  margin: -1px 0 4px 0;
   display: flex;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     position: absolute;
     top: -167px;
     left: 69px;
@@ -109,9 +111,9 @@
     height: 511px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     top: -177px;
-    left: 0;
+    left: 21px;
   }
 }
 
@@ -119,23 +121,23 @@
   width: 85px;
   height: 14px;
   border-radius: 6px;
-  border: 1px solid $Alto;
+  border: 1px solid $alto;
   background-color: $white;
   margin: 2px 9px 0 0;
   position: relative;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     width: 426px;
     border: 0;
-    background-color: $Alto;
+    background-color: $alto;
     height: 6px;
     border-radius: 6px;
-    margin: 12px 22px 0 0;
+    margin: 12px 25px 0 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     height: 6px;
-    background-color: $Alto;
+    background-color: $alto;
     border-radius: 6px;
     margin: 12px 0 0 0;
     position: relative;
@@ -149,12 +151,12 @@
   position: absolute;
   width: 35px;
   height: 6px;
-  background-color: $Apple;
+  background-color: $apple;
   border-radius: 6px;
   left: 6px;
   top: 4px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     content: "";
     position: absolute;
     width: 38px;
@@ -167,7 +169,7 @@
     cursor: pointer;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     content: "";
     position: absolute;
     width: 38px;
@@ -181,7 +183,7 @@
 
 
 .slider__range-bar::before:active {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     content: "";
     position: absolute;
     width: 38px;

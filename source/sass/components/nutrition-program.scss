@@ -7,18 +7,18 @@
   margin: 0 auto 22px auto;
   width: 280px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 768px;
+    width: 709px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     display: flex;
     margin: 0 auto 71px auto;
-    padding: 0;
-    width: 1440px;
+    padding: 0 0 0 15px;
+    width: 1220px;
   }
 }
 
@@ -29,14 +29,14 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0 0 47px 30px;
+    margin: 0 0 47px 9px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -44,12 +44,12 @@
 }
 
 .nutrition-program__item {
-  background-color: $Concrete;
+  background-color: $concrete;
   padding: 30px 0 18px 20px;
   position: relative;
   width: 260px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     padding: 76px 316px 54px 53px;
     box-sizing: border-box;
   }
@@ -58,12 +58,12 @@
 .nutrition-program__item:first-child {
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     width: 708px;
     margin: 0 0 33px 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     padding: 77px 51px 55px 52px;
     margin: 0 80px 0 0;
     width: 570px;
@@ -71,11 +71,11 @@
 }
 
 .nutrition-program__item:last-child {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     width: 708px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     padding: 77px 61px 60px 52px;
     width: 570px;
   }
@@ -95,7 +95,7 @@
   top: 20px;
   left: 21px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     background-image: url("../img/cat-slim_tablet.svg");
     background-repeat: no-repeat;
     width: 200px;
@@ -104,13 +104,13 @@
     left: 445px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     background-image: url("../img/cat-slim_desck.svg");
     background-repeat: no-repeat;
     width: 100px;
     height: 106px;
-    top: 44px;
-    left: 51px;
+    top: 43px;
+    left: 52px;
   }
 }
 
@@ -128,7 +128,7 @@
   top: 24px;
   left: 13px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     background-image: url("../img/cat-pro_tablet.svg");
     background-repeat: no-repeat;
     width: 268px;
@@ -137,7 +137,7 @@
     left: 411px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     background-image: url("../img/cat-pro_desck.svg");
     background-repeat: no-repeat;
     width: 134px;
@@ -148,7 +148,7 @@
 }
 
 .nutrition-program__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -159,13 +159,13 @@
   display: block;
   padding: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 26px 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     margin: 0 0 75px 162px;
   }
 }
@@ -177,13 +177,13 @@
   font-size: 14px;
   line-height: 18px;
   color: $black;
-  margin: 0 0 18px 0;
+  margin: 0 0 19px 0;
   padding-bottom: 22px;
   display: block;
-  border-bottom: 1px solid $Alto;
+  border-bottom: 1px solid $alto;
   width: 227px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     padding: 0;
     font-size: 16px;
     line-height: 24px;
@@ -193,7 +193,7 @@
     width: 340px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     text-align: start;
     margin: 0 0 26px 0;
     width: 467px;
@@ -201,7 +201,7 @@
 }
 
 .nutrition-program__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -215,12 +215,12 @@
     opacity: 0.3;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     font-size: 20px;
     line-height: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     margin: 0;
   }
 }
@@ -235,7 +235,7 @@
   top: 7px;
   left: 100px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     left: 133px;
     top: 9px;
   }

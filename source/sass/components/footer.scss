@@ -4,26 +4,26 @@
 .footer {
   grid-column: 1 / -1;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     grid-column: 1 / -1;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     grid-column: 1 / -1;
-    background-color: $Concrete;
+    background-color: $concrete;
   }
 }
 
 .footer__wrapper-color {
-  background-color: $Concrete;
+  background-color: $concrete;
 
-  @media (min-width: $desktop-width) {
-    background-color: $Concrete;
+  @media (min-width: $desktopWidth) {
+    background-color: $concrete;
   }
 }
 
 .footer__address-position {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     position: relative;
     width: 500px;
     height: 2px;
@@ -38,37 +38,37 @@
 .footer__address-position--catalog,
 .footer__address-position--form,
 .footer__address-position--color {
-  background-color: $Concrete;
+  background-color: $concrete;
 }
 
 .footer__address-wrapper {
   display: flex;
-  padding: 27px 0 25px 40px;
+  padding: 28px 0 25px 20px;
   background-color: $white;
   width: 320px;
   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    padding: 59px 0 60px 137px;
+  @media (min-width: $tabletWidth) {
+    padding: 59px 0 60px 14px;
     margin: 0 auto;
-    width: 768px;
+    width: 630px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     width: 428px;
     position: absolute;
     background-color: $white;
     top: 93px;
     left: -358px;
-    padding: 65px 60px 62px 77px;
+    padding: 63px 60px 62px 85px;
     margin: 0 auto;
   }
 }
 
 .footer__address-wrapper--color {
-  background-color: $Concrete;
+  background-color: $concrete;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     background-color: $white;
   }
 }
@@ -80,19 +80,19 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $CodGray;
+  color: $codGray;
   width: 140px;
   margin: 0;
   display: flex;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     font-size: 20px;
     line-height: 26px;
     width: 172px;
     margin: 0 285px 0 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     font-size: 20px;
     line-height: 26px;
     width: 200px;
@@ -106,19 +106,19 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: $Tundora;
+  color: $tundora;
   max-width: 139px;
   margin: 0;
   padding: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     max-width: 172px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     font-size: 16px;
     line-height: 20px;
     text-align: left;
@@ -129,17 +129,17 @@
 .footer__map {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  background-color: $Concrete;
+  background-color: $concrete;
   background-position: 50% 0;
   height: 362px;
   margin: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     height: 400px;
     background-image: url("../img/map_tablet.jpg");
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     height: 400px;
     background-image: url("../img/map_desktop.jpg");
     margin: 0;
@@ -152,20 +152,19 @@
   height: 362px;
   width: 100%;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     height: 400px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopWidth) {
     height: 400px;
   }
 }
 
 .footer__academy {
-  width: 320px;
-  padding: 4px 0 0 53px;
+  padding: 2px 0 0 9px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     margin: 0;
     padding: 0;
   }
@@ -177,6 +176,10 @@
   margin: 0;
   text-decoration: none;
   align-items: center;
+
+  @media (min-width: $tabletWidth) {
+    width: 163px;
+  }
 }
 
 .footer__academy-link:active {
@@ -184,11 +187,11 @@
 }
 
 .footer__academy-logo:hover {
-  fill: $Apple;
+  fill: $apple;
 }
 
 .footer__academy-logo:active {
-  fill: $Apple;
+  fill: $apple;
 }
 
 .footer__academy-title {
@@ -197,29 +200,29 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $Tundora;
+  color: $tundora;
   margin: 0 140px 0 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     margin: 0 22px 0 0;
     padding: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 3px 21px 0 0;
+  @media (min-width: $desktopWidth) {
+    margin: 3px 22px 0 0;
   }
 }
 
 .footer__academy-logo {
   margin: 0;
-  fill: $DoveGray;
+  fill: $doveGray;
 
-  @media (min-width: $tablet-width) {
-    margin: 0 30px 0 0;
+  @media (min-width: $tabletWidth) {
+    margin: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 7px 110px 0 0;
+  @media (min-width: $desktopWidth) {
+    margin: 7px 0 0 0;
   }
 }
 
@@ -228,30 +231,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $Concrete;
+  background-color: $concrete;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: row;
     padding: 0;
     margin: 0 auto;
-    width: 768px;
+    width: 709px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 1440px;
+  @media (min-width: $desktopWidth) {
+    width: 1220px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 20px;
   }
 }
 
 .footer__logo {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     margin: 0 156px 0 0;
     padding: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 0 362px 0 0;
+  @media (min-width: $desktopWidth) {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -259,13 +266,13 @@
   margin: 0 0 29px 14px;
 
 
-  @media (min-width: $tablet-width) {
-    margin: 63px 0 55px 30px;
+  @media (min-width: $tabletWidth) {
+    margin: 63px 0 55px 8px;
     padding: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 63px 50px 55px 110px;
+  @media (min-width: $desktopWidth) {
+    margin: 63px 410px 55px 0;
   }
 }
 
@@ -278,7 +285,7 @@
 }
 
 .footer__address-town {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tabletWidth) {
     margin: 19px 0 0 0;
     display: block;
   }
