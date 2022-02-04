@@ -7,7 +7,7 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 140px 140px 1fr;
-
+  overflow-x: hidden;
 
   @media (min-width: $tabletWidth) {
     display: grid;
