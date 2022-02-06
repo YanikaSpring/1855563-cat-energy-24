@@ -43,9 +43,9 @@
 
 .footer__address-wrapper {
   display: flex;
-  padding: 28px 0 25px 20px;
+  padding: 28px 0 25px 0;
   background-color: $white;
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tabletWidth) {
@@ -74,7 +74,7 @@
 }
 
 .footer__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -162,7 +162,8 @@
 }
 
 .footer__academy {
-  padding: 2px 0 0 9px;
+  padding: 0;
+  width: 280px;
 
   @media (min-width: $tabletWidth) {
     margin: 0;
@@ -176,6 +177,7 @@
   margin: 0;
   text-decoration: none;
   align-items: center;
+  justify-content: space-between;
 
   @media (min-width: $tabletWidth) {
     width: 163px;
@@ -201,7 +203,7 @@
   font-size: 16px;
   line-height: 18px;
   color: $tundora;
-  margin: 0 140px 0 0;
+  margin: 0;
 
   @media (min-width: $tabletWidth) {
     margin: 0 22px 0 0;
@@ -227,7 +229,7 @@
 }
 
 .footer__wrapper {
-  padding: 39px 20px 22px 5px;
+  padding: 39px 0 22px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,15 +240,15 @@
     flex-direction: row;
     padding: 0;
     margin: 0 auto;
-    width: 709px;
+    width: 720px;
   }
 
   @media (min-width: $desktopWidth) {
-    width: 1220px;
+    width: 1240px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 35px;
   }
 }
 
@@ -257,22 +259,21 @@
   }
 
   @media (min-width: $desktopWidth) {
-    margin: 0;
+    margin: 0 415px 0 0;
     padding: 0;
   }
 }
 
 .footer__logo-image {
-  margin: 0 0 29px 14px;
-
+  margin: 2px 0 29px 0;
 
   @media (min-width: $tabletWidth) {
-    margin: 63px 0 55px 8px;
+    margin: 63px 0 55px 12px;
     padding: 0;
   }
 
   @media (min-width: $desktopWidth) {
-    margin: 63px 410px 55px 0;
+    margin: 62px 0 55px 0;
   }
 }
 

@@ -6,6 +6,7 @@
   flex-direction: column;
   position: relative;
 
+
   @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: column;
@@ -25,6 +26,7 @@
 .program-example__container {
   background-color: $concrete;
 
+
   @media (min-width: $tabletWidth) {
     background-color: $white;
   }
@@ -38,9 +40,10 @@
   margin: 0 auto;
   padding: 25px 0 0 0;
 
+
   @media (min-width: $tabletWidth) {
     background-color: $white;
-    padding: 25px 30px 50px 30px;
+    padding: 25px 0 50px 12px;
     width: 708px;
     margin: 0 auto;
   }
@@ -63,6 +66,7 @@
   line-height: 40px;
   color: $black;
   margin: 0 0 41px 0;
+
 
   @media (min-width: $tabletWidth) {
     font-size: 60px;
@@ -88,6 +92,7 @@
   max-width: 280px;
   margin: 0;
 
+
   @media (min-width: $tabletWidth) {
     font-size: 16px;
     line-height: 24px;
@@ -106,6 +111,7 @@
   display: flex;
   flex-direction: column;
 
+
   @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: row;
@@ -123,6 +129,7 @@
   display: flex;
   justify-content: space-between;
   margin: 20px 0 18px 0;
+
 
   @media (min-width: $tabletWidth) {
     margin: 0 120px 0 0;
@@ -146,6 +153,7 @@
   width: 124px;
   padding: 14px 0;
   position: relative;
+
 
   @media (min-width: $tabletWidth) {
     margin-right: 41px;

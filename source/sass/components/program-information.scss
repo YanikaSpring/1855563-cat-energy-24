@@ -3,7 +3,8 @@
 
 .program-information {
   margin: 0 auto 25px auto;
-  width: 320px;
+  width: 280px;
+
 
   @media (min-width: $tabletWidth) {
     margin: 0 auto 18px auto;
@@ -20,13 +21,14 @@
 }
 
 .program-information__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
   color: $black;
-  margin: 0 0 43px 20px;
+  margin: 0 0 43px 0;
+
 
   @media (min-width: $tabletWidth) {
     margin: 0 0 45px 9px;
@@ -41,11 +43,12 @@
 
 .program-information__list {
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 0 80px;
   display: flex;
   flex-direction: column;
-  margin: 0 20px 0 100px;
+  margin: 0;
   counter-reset: section;
+
 
   @media (min-width: $tabletWidth) {
     display: flex;
@@ -70,6 +73,7 @@
   position: relative;
   margin: 0 0 26px 0;
   padding: 0;
+
 
   @media (min-width: $tabletWidth) {
     padding: 141px 0 57px 0;
@@ -117,7 +121,7 @@
     counter-increment: section;
     content: counter(section);
     position: absolute;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 280px;
@@ -134,7 +138,7 @@
     counter-increment: section;
     content: counter(section);
     position: absolute;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 280px;
@@ -154,6 +158,7 @@
   line-height: 18px;
   color: $tundora;
   margin: 0;
+
 
   @media (min-width: $tabletWidth) {
     font-size: 16px;
@@ -265,9 +270,7 @@
 }
 
 .program-information__br--tablet {
-  @media (min-width: $mobileWidthOnly) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: $tabletWidth) {
     display: block;

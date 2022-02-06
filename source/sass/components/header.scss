@@ -8,11 +8,12 @@
   position: relative;
   min-width: 320px;
 
+
   @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: column;
     margin: 10px auto 628px auto;
-    width: 709px;
+    width: 715px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -32,6 +33,7 @@
   padding: 27px 30px 164px 30px;
   background-position: 50% 0;
 
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/cat-green-mobile@2x.jpg");
   }
@@ -39,10 +41,9 @@
   @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: column;
-    min-width: 420px;
     background-color: $white;
     background-image: none;
-    margin: 0 0 0 95px;
+    margin: 0 0 0 100px;
     padding: 0;
   }
 
@@ -64,6 +65,7 @@
   text-align: center;
   margin: 0 0 25px 0;
   padding: 0;
+
 
   @media (min-width: $tabletWidth) {
     color: $black;
@@ -91,12 +93,13 @@
   padding: 0;
   text-align: center;
 
+
   @media (min-width: $tabletWidth) {
     color: $black;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
-    margin: 0 0 0 3px;
+    margin: 0;
   }
 
   @media (min-width: $desktopWidth) {
@@ -109,9 +112,10 @@
   margin: 0 auto;
   position: relative;
 
+
   @media (min-width: $tabletWidth) {
     margin: 0 auto;
-    width: 768px;
+    width: 709px;
   }
 }
 
@@ -133,6 +137,7 @@
   top: 139px;
   left: -140px;
   display: flex;
+
 
   @media (min-width: $tabletWidth) {
     z-index: 1;
@@ -174,12 +179,14 @@
   margin: 0;
   padding: 0;
 
+
   @media (min-width: $tabletWidth) {
     position: absolute;
     top: 20px;
-    left: 9px;
-    width: 709px;
+    left: 0;
+    width: 715px;
     height: 609px;
+    padding: 0 0 0 0;
   }
 
   @media (min-width: $desktopWidth) {

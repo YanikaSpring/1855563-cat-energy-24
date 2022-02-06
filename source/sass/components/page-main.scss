@@ -3,7 +3,6 @@
 .page-main {
   grid-column: 1 / -1;
   margin: 0;
-  // min-width: 320px;
 
   @media (min-width: $tabletWidth) {
     grid-column: 1 / -1;
@@ -18,15 +17,14 @@
   @media (min-width: $desktopWidth) {
     position: absolute;
     content: "";
-    width: 50%;
+    width: 49.5%;
     height: 694px;
     background-color: $appleDark;
     top: 0;
-    right: -9px;
+    right: 0;
     z-index: -1;
     background-image: url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
-    object-fit: cover;
     background-position: right;
 
     @media (min-resolution: 2dppx) {

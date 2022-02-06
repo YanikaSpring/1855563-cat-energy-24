@@ -9,6 +9,7 @@
   position: relative;
   width: 280px;
 
+
   @media (min-width: $tabletWidth) {
     background-color: $concrete;
     min-height: 425px;
@@ -41,8 +42,9 @@
   margin: 15px 0 0 0;
   width: 280px;
 
+
   @media (min-width: $tabletWidth) {
-    padding: 0 50px 23px 81px;
+    padding: 0 30px 23px 81px;
     width: 591px;
   }
 
@@ -66,11 +68,12 @@
   cursor: pointer;
   margin: 0 12px 0 30px;
 
+
   @media (min-width: $tabletWidth) {
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $alto;
-    margin: 0 25px 0 0;
+    margin: 0 26px 0 0;
     padding: 0;
   }
 

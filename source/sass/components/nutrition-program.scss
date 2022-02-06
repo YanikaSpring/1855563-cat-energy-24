@@ -7,11 +7,12 @@
   margin: 0 auto 22px auto;
   width: 280px;
 
+
   @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 709px;
+    width: 715px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -32,8 +33,9 @@
   @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0 0 47px 9px;
+    padding: 0 0 0 10px;
+    margin: 0 0 47px 0;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktopWidth) {
